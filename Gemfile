@@ -1,6 +1,13 @@
 source 'https://rubygems.org'
 
 
+# Devise. Gestión de los usuarios
+gem 'devise'
+# Para subir imagenes
+gem 'carrierwave'
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use mysql as the database for Active Record
