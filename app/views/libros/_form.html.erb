@@ -10,32 +10,50 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :titulo %><br>
-    <%= f.text_field :titulo %>
-  </div>
-  <div class="field">
-    <%= f.label :autor %><br>
-    <%= f.text_field :autor %>
-  </div>
-  <div class="field">
-    <%= f.label :genero %><br>
-    <%= f.text_field :genero %>
-  </div>
-  <div class="field">
-    <%= f.label :isbn %><br>
-    <%= f.number_field :isbn %>
-  </div>
-  <div class="field">
-    <%= f.label :portada %><br>
-    <%= f.file_field :portada %>
-  </div>
-  <div class="field">
-    <%= f.label :fregistro %><br>
-    <%= f.date_select :fregistro %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-6">
+        <% if @libro.portada? %>
+          <%= image_tag @libro.portada, :class => 'img-responsive portada img-thumbnail' %>
+          <h4>Cambiar portada</h4>
+          <%= f.file_field :portada %>
+        <% else %>
+          <h2>Sin portada</h2>
+          <h4>Elegir portada</h4>
+          <%= f.file_field :portada %>
+        <% end %>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          <!-- grupo -->
+          <div class="form-group">
+              <h4>Titulo</h4>
+              <%= f.text_field :titulo, :class => 'form-control' %>
+          </div>
+          <!-- grupo -->
+          <div class="form-group">
+              <h4>Autor</h4>
+              <%= f.text_field :autor, :class => 'form-control' %>
+          </div>
+          <!-- grupo -->
+          <div class="form-group">
+              <h4>Género</h4>
+              <%= f.text_field :genero, :class => 'form-control' %>
+          </div>
+          <!-- grupo -->
+          <div class="form-group">
+              <h4>ISBN</h4>
+              <%= f.text_field :isbn, :class => 'form-control' %>
+          </div>
+              <h4>Fecha de registro</h4>
+              <%= f.date_select :fregistro, :class => 'form-control', order: [:day, :month, :year], use_month_numbers: true %>
+          <div class="text-right">
+            <%= f.submit 'Guardar', :class => 'btn btn-primary' %>
+            <%= link_to 'Cancelar', @libro, :class => 'btn btn-default' %>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 <% end %>

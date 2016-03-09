@@ -1,6 +1,15 @@
-<h1>Editing Libro</h1>
+<% if notice %>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= notice %>
+  </div>
+<% end %>
+
+<h1>Editar libro</h1>
+<div class="col-sm-12 text-right">
+    <%= link_to @libro, method: :delete, data: { confirm: '¿De veras quieres eliminar este libro?' } do %>
+        <span class="glyphicon glyphicon-remove"></span>
+    <% end %>
+</div>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @libro %> |
-<%= link_to 'Back', libros_path %>

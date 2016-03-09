@@ -16,10 +16,20 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+// al acceder a la aplicación
 $(document).ready(function(){
+    cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+});
+
+// al cargar nuevas páginas
+$(document).on('page:load', function(){
+    cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+});
+
+function cambiarColorEnlaces(){ 
     $('.li-menu') .hover(function(){
         $(this).css('background-color', 'rgb(0,0,120');
     }, function(){
         $(this).css('background-color', 'rgb(0,0,150');
     });
-});
+}

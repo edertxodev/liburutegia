@@ -28,7 +28,7 @@ class LibrosController < ApplicationController
 
     respond_to do |format|
       if @libro.save
-        format.html { redirect_to @libro, notice: 'Libro was successfully created.' }
+        format.html { redirect_to @libro, notice: 'El libro se ha creado correctamente.' }
         format.json { render :show, status: :created, location: @libro }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LibrosController < ApplicationController
   def update
     respond_to do |format|
       if @libro.update(libro_params)
-        format.html { redirect_to @libro, notice: 'Libro was successfully updated.' }
+        format.html { redirect_to @libro, notice: 'El libro se ha actualizado correctamente.' }
         format.json { render :show, status: :ok, location: @libro }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class LibrosController < ApplicationController
   def destroy
     @libro.destroy
     respond_to do |format|
-      format.html { redirect_to libros_url, notice: 'Libro was successfully destroyed.' }
+      format.html { redirect_to libros_url, notice: 'El libro se ha eliminado correctamente.' }
       format.json { head :no_content }
     end
   end

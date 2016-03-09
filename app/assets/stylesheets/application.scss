@@ -17,6 +17,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+    background: url(noise.png) #fff;
+}
+
+a {
+    color: #337AB7 !important;
+    &:hover {
+        background: none !important;
+    }
+}
+
+.container {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px #ccc;
+    padding: 20px;
+}
+
+.btn {
+    color:#f9f9f9 !important;
+}
+
+.btn-primary {
+    &:hover{
+        background: #286090 !important;
+    }
+}
+
+.btn-default {
+    color:#000 !important;
+}
+
 /* Barra de navegación */
     .navbar-default {
         background-color: rgb(0,0,150);
@@ -35,3 +67,21 @@
     .navbar-default .navbar-nav > .open > a:focus {
         background-color: rgb(0,0,120);
     }
+    
+.portada {
+    width: 450px;
+    height: 600px;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.glyphicon-remove { // icono de eliminar
+    font-size: 24px;
+    color: rgb(150,0,0) !important;
+    &:hover {
+        color: rgb(120,0,0);
+    }
+}
