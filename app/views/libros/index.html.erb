@@ -7,11 +7,13 @@
 
 <h1>Libros disponibles</h1>
 
+
+
 <div class="table-responsive">
   <table class="table table-bordered table-hover">
     <tr>
-      <th>Titulo</th>
-      <th>Fecha registro</th>
+      <th><%= sortable "titulo", "Titulo" %></th>
+      <th><%= sortable "fregistro", "Fecha de registro" %></th>
     </tr>
       <% @libros.each do |libro| %>
       <tr>

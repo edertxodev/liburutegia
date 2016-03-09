@@ -1,12 +1,13 @@
 class LibrosController < ApplicationController
   before_action :set_libro, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_column, :sort_direction
 
   # GET /libros
   # GET /libros.json
   def index
     @libros = Libro.all
-    # Muestra x libros por página
-    @libros = Libro.paginate(:page => params[:page], :per_page => 10)
+    # Muestra x libros por página, busca por un patrón y ordena los productos al clicar en la cabecera de la columna
+    @libros = Libro.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
   end
 
   # GET /libros/1
@@ -72,5 +73,14 @@ class LibrosController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def libro_params
       params.require(:libro).permit(:titulo, :autor, :genero, :isbn, :portada, :fregistro)
+    end
+    
+    # Orientación de las columnas
+    def sort_column
+      Libro.column_names.include?(params[:sort]) ? params[:sort] : "titulo"
+    end
+    
+    def sort_direction
+      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
     end
 end

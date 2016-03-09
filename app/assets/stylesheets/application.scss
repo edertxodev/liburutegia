@@ -85,3 +85,13 @@ a {
         color: rgb(120,0,0);
     }
 }
+
+/* Tablas */
+    /* Para que aparezca la flechita al ordenar */
+    th .asc:after {
+      content: '↑';
+    }
+    
+    th .desc:after {
+      content: '↓';
+    }
