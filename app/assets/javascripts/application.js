@@ -15,3 +15,11 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+    $('.li-menu') .hover(function(){
+        $(this).css('background-color', 'rgb(0,0,120');
+    }, function(){
+        $(this).css('background-color', 'rgb(0,0,150');
+    });
+});

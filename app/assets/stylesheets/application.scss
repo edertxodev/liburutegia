@@ -17,3 +17,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Barra de navegación */
+    .navbar-default {
+        background-color: rgb(0,0,150);
+        color: #fff;
+        a {
+            color: #fff !important;
+        }
+        .dropdown-menu a {
+            color: #333 !important;
+        }
+    }
+    
+    /* Cuando el dropdown está abierto */
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        background-color: rgb(0,0,120);
+    }
