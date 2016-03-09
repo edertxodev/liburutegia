@@ -5,7 +5,7 @@
   </div>
 <% end %>
 
-<h1>Listing Libros</h1>
+<h1>Libros disponibles</h1>
 
 <div class="table-responsive">
   <table class="table table-bordered table-hover">
@@ -20,4 +20,5 @@
       </tr>
       <% end %>
   </table>
+  <%= will_paginate @libros, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
 </div>

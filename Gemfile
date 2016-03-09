@@ -7,6 +7,8 @@ gem 'devise'
 gem 'carrierwave'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+# Paginación
+gem 'will_paginate-bootstrap'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
