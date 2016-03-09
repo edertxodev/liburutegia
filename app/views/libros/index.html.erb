@@ -8,25 +8,13 @@
 <h1>Libros disponibles</h1>
 
 <div class="row">
-  <%= form_tag libros_path, :method => 'get' do %>
+  <%= form_tag libros_path, :method => 'get', :id => 'form-buscar' do %>  
     <div class="col-sm-4 col-sm-offset-8">
-      <%= text_field_tag :search, params[:search], :class => 'form-control', :id => 'form-buscar', :placeholder => 'Buscar' %>
+      <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => 'Buscar' %>
     </div>
   <% end %>
 </div>
 
-<div class="table-responsive tabla-libros">
-  <table class="table table-bordered table-hover">
-    <tr>
-      <th><%= sortable "titulo", "Titulo" %></th>
-      <th><%= sortable "fregistro", "Fecha de registro" %></th>
-    </tr>
-      <% @libros.each do |libro| %>
-      <tr>
-        <td><%= link_to libro.titulo, libro %></td>
-        <td><%= libro.fregistro %></td>
-      </tr>
-      <% end %>
-  </table>
-  <%= will_paginate @libros, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
+<div class="table-responsive" id="tabla-libros">
+  <%= render 'libros' %>
 </div>
