@@ -13,18 +13,17 @@
   
   <div class="col-sm-12">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <% if @libro.portada? %>
           <%= image_tag @libro.portada, :class => 'img-responsive portada img-thumbnail' %>
           <h4>Cambiar portada</h4>
           <%= f.file_field :portada %>
         <% else %>
-          <h2>Sin portada</h2>
           <h4>Elegir portada</h4>
           <%= f.file_field :portada %>
         <% end %>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-7">
         <form>
           <!-- grupo -->
           <div class="form-group">

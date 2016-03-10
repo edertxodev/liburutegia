@@ -34171,3 +34171,1795 @@ Completed 200 OK in 96ms (Views: 93.3ms | ActiveRecord: 0.3ms)
 
 Started GET "/assets/noise.png" for 85.84.246.153 at 2016-03-09 20:53:38 +0000
 Cannot render console from 85.84.246.153! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:09:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Mysql2::Error (Can't connect to MySQL server on '0.0.0.0' (111)):
+  mysql2 (0.4.3) lib/mysql2/client.rb:87:in `connect'
+  mysql2 (0.4.3) lib/mysql2/client.rb:87:in `initialize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:09:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LibrosController#index as HTML
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 88.9.156.177 at 2016-03-10 07:09:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 635ms (Views: 617.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 07:09:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 07:09:30 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users/sign_in" for 88.9.156.177 at 2016-03-10 07:09:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vobyg2FMoM6kfRJBwzKG5tI3pNbXIG8osOwpmTfSAKl6SagGq61VTF5vSlr6jItuJ89I18hlo8buD/sf983aYw==", "user"=>{"username"=>"edertxo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`username` = 'edertxo'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2016-03-09 17:49:10', `current_sign_in_at` = '2016-03-10 07:09:40', `last_sign_in_ip` = '85.84.246.153', `current_sign_in_ip` = '88.9.156.177', `sign_in_count` = 6, `updated_at` = '2016-03-10 07:09:40' WHERE `users`.`id` = 1
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+Redirected to https://liburutegia-edertxodw.c9users.io/
+Completed 302 Found in 189ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:09:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.5ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (16.9ms)
+  Rendered libros/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 137ms (Views: 123.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 07:09:41 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros?direction=desc&sort=titulo" for 88.9.156.177 at 2016-03-10 07:09:44 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"desc", "sort"=>"titulo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.3ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo desc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (152.9ms)
+  Rendered libros/index.html.erb within layouts/application (155.0ms)
+Completed 200 OK in 223ms (Views: 220.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/libros?direction=asc&sort=fregistro" for 88.9.156.177 at 2016-03-10 07:09:47 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"fregistro"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.4ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY fregistro asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 188ms (Views: 185.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/libros?direction=desc&sort=fregistro" for 88.9.156.177 at 2016-03-10 07:09:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"desc", "sort"=>"fregistro"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.5ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY fregistro desc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.5ms)
+  Rendered libros/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 104ms (Views: 100.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/libros?direction=asc&sort=titulo" for 88.9.156.177 at 2016-03-10 07:09:50 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"titulo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.8ms)
+  Rendered libros/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros?direction=desc&sort=titulo" for 88.9.156.177 at 2016-03-10 07:09:53 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"desc", "sort"=>"titulo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo desc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.224 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.224! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.9ms)
+  Rendered libros/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 110ms (Views: 108.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.177 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 10.240.0.15 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 10.240.0.196 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.196! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.177 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 10.240.0.195 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 10.240.0.168 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.168! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 10.240.0.195 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 10.240.0.181 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 10.240.0.173 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 10.240.0.181 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 10.240.0.195 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 10.240.0.173 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 10.240.0.181 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 10.240.0.195 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 10.240.0.173 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 10.240.0.195 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 10.240.0.173 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 10.240.0.188 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.181 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 10.240.0.176 at 2016-03-10 07:54:04 +0000
+Cannot render console from 10.240.0.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 10.240.0.195 at 2016-03-10 07:54:05 +0000
+Cannot render console from 10.240.0.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:54:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.8ms)
+  Rendered libros/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 07:54:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/new" for 88.9.156.177 at 2016-03-10 07:54:09 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered libros/_form.html.erb (7.6ms)
+  Rendered libros/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 90ms (Views: 88.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:54:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (3.3ms)
+  Rendered libros/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 163ms (Views: 160.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 07:54:11 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.5ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 215ms (Views: 208.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:54:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.4ms)
+  Rendered libros/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/1" for 88.9.156.177 at 2016-03-10 07:54:17 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.3ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:54:18 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.1ms)
+  Rendered libros/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 159ms (Views: 156.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/3" for 88.9.156.177 at 2016-03-10 07:54:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.4ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 3 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 07:54:22 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 137ms (Views: 134.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 07:54:23 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 07:59:00 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f9c64a7c508>:0x007f9c55fe0aa8>):
+    15:       <% else %>
+    16:         <h2>Sin portada</h2>
+    17:         <h4>Elegir portada</h4>
+    18:         <%= f.file_field :portada %>
+    19:       <% end %>
+    20:     </div>
+    21:     <div class="col-sm-7">
+  app/views/libros/show.html.erb:18:in `_app_views_libros_show_html_erb___149102645703267318_70154717215680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.6ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 07:59:29 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `file_field' for #<Libro:0x007f9c5522aaf8>):
+    15:       <% else %>
+    16:         <h2>Sin portada</h2>
+    17:         <h4>Elegir portada</h4>
+    18:         <%= @libro.file_field :portada %>
+    19:       <% end %>
+    20:     </div>
+    21:     <div class="col-sm-7">
+  app/views/libros/show.html.erb:18:in `_app_views_libros_show_html_erb___149102645703267318_70154709977080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.2ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 139ms (Views: 136.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:00:48 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 320ms (Views: 316.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/sinportada.png" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as PNG
+  Parameters: {"id"=>"sinportada"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (1.6ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 5ms (ActiveRecord: 1.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Libro with 'id'=sinportada):
+  app/controllers/libros_controller.rb:69:in `set_libro'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.1ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:07:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 208ms (Views: 205.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/sinportada.png" for 88.9.156.177 at 2016-03-10 08:08:16 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as PNG
+  Parameters: {"id"=>"sinportada"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Libro with 'id'=sinportada):
+  app/controllers/libros_controller.rb:69:in `set_libro'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:08:17 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/sinportada.png" for 88.9.156.177 at 2016-03-10 08:08:40 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as PNG
+  Parameters: {"id"=>"sinportada"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Libro with 'id'=sinportada):
+  app/controllers/libros_controller.rb:69:in `set_libro'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.8ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:08:41 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:08:54 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (1.9ms)
+  Rendered libros/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 195ms (Views: 192.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:08:55 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 235ms (Views: 232.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/sinportada.png" for 88.9.156.177 at 2016-03-10 08:08:56 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as PNG
+  Parameters: {"id"=>"sinportada"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Libro with 'id'=sinportada):
+  app/controllers/libros_controller.rb:69:in `set_libro'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.7ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:08:57 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.9ms)
+  Rendered libros/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/1" for 88.9.156.177 at 2016-03-10 08:08:58 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/new" for 88.9.156.177 at 2016-03-10 08:09:50 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered libros/_form.html.erb (3.6ms)
+  Rendered libros/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 182ms (Views: 179.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:20:33 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.3ms)
+  Rendered libros/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/3" for 88.9.156.177 at 2016-03-10 08:20:34 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 3 LIMIT 1[0m
+  Rendered libros/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:20:35 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.9ms)
+  Rendered libros/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 190ms (Views: 188.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:20:36 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1[0m
+  Rendered libros/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 110ms (Views: 107.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/sinportada.png" for 88.9.156.177 at 2016-03-10 08:20:36 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as PNG
+  Parameters: {"id"=>"sinportada"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Libro with 'id'=sinportada):
+  app/controllers/libros_controller.rb:69:in `set_libro'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.1ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:28:17 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (145.3ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (147.5ms)
+  Rendered libros/index.html.erb within layouts/application (149.3ms)
+Completed 200 OK in 219ms (Views: 71.5ms | ActiveRecord: 145.5ms)
+
+
+Started GET "/libros/1" for 88.9.156.177 at 2016-03-10 08:28:18 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 1 LIMIT 1[0m
+  Rendered libros/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:28:49 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.1ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 121ms (Views: 117.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:28:52 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1[0m
+  Rendered libros/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 189ms (Views: 186.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.3ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1[0m
+  Rendered libros/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 230ms (Views: 227.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:30:28 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:31:35 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 90ms (Views: 87.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/libros?direction=desc&sort=titulo" for 88.9.156.177 at 2016-03-10 08:31:38 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"direction"=>"desc", "sort"=>"titulo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros`  ORDER BY titulo desc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.9ms)
+  Rendered libros/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros?utf8=%E2%9C%93&search=ui" for 88.9.156.177 at 2016-03-10 08:31:41 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"ui"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.4ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE (titulo LIKE '%ui%')  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (2.0ms)
+  Rendered libros/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 270ms (Views: 267.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:31:41 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros?utf8=%E2%9C%93&search=ui" for 88.9.156.177 at 2016-03-10 08:35:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"ui"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.2ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE (titulo LIKE '%ui%')  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (1.6ms)
+  Rendered libros/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 200ms (Views: 198.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-aa079dc682bd48727df3c4bf62df2fd5644288aba6fc048448da8edf2369ef1e.css?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:35:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros?utf8=%E2%9C%93&search=" for 88.9.156.177 at 2016-03-10 08:35:09 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLibro Load (0.5ms)[0m  [1mSELECT  `libros`.* FROM `libros` WHERE (titulo LIKE '%%')  ORDER BY titulo asc LIMIT 10 OFFSET 0[0m
+  Rendered libros/_libros.html.erb (155.7ms)
+  Rendered libros/index.html.erb within layouts/application (157.8ms)
+Completed 200 OK in 235ms (Views: 232.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:35:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/new" for 88.9.156.177 at 2016-03-10 08:36:25 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered libros/_form.html.erb (2.6ms)
+  Rendered libros/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 124ms (Views: 121.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:36:30 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.7ms)
+  Rendered libros/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:36:32 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:36:37 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (107.3ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (111.0ms)
+  Rendered libros/index.html.erb within layouts/application (114.8ms)
+Completed 200 OK in 202ms (Views: 92.6ms | ActiveRecord: 107.6ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:37:04 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.4ms)
+  Rendered libros/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1999ms (Views: 1996.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros`  ORDER BY titulo asc LIMIT 10 OFFSET 0
+  Rendered libros/_libros.html.erb (2.5ms)
+  Rendered libros/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 102ms (Views: 99.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-2e49710b11c84fb38222314d4f87ce4a094bec95e9dfbfc675d5511d3d2acbb7.css?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:37:06 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:37:07 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 94.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.1ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 99ms (Views: 95.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:20 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-2e49710b11c84fb38222314d4f87ce4a094bec95e9dfbfc675d5511d3d2acbb7.css?body=1" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:48:21 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/libros/4" for 88.9.156.177 at 2016-03-10 08:49:09 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LibrosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLibro Load (0.2ms)[0m  SELECT  `libros`.* FROM `libros` WHERE `libros`.`id` = 4 LIMIT 1
+  Rendered libros/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 88ms (Views: 84.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/libros.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-2e49710b11c84fb38222314d4f87ce4a094bec95e9dfbfc675d5511d3d2acbb7.css?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/libros.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-ad2ec910159fcdd01ffb8ed4f5abbdc0f6681e56d251a4855f80b0e0d18a957c.js?body=1" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/noise.png" for 88.9.156.177 at 2016-03-10 08:49:10 +0000
+Cannot render console from 88.9.156.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
