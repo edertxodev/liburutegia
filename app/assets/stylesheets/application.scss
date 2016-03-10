@@ -101,3 +101,14 @@ a {
     th .desc:after {
       content: '↓';
     }
+    
+/* Footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    p {
+        margin-right: 20px;
+    }
+}
