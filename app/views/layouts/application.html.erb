@@ -32,10 +32,10 @@
             <ul class="dropdown-menu">
               <li><%= link_to 'Perfil', current_user %></li>
               <li role="separator" class="divider"></li>
-               if current_user.admin?
+               <% if current_user.admin? %>
               <li><%= link_to 'Crear usuario', '#' %></li>
               <li role="separator" class="divider"></li>
-               end 
+               <% end  %>
               <li><%= link_to "Cerrar sesión", destroy_user_session_path, :method => :delete %></li>
             </ul>
           </li>

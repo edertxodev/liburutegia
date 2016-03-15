@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-    def index
+    def show
+        @user = current_user
     end
     
-    def show
+    def edit
         @user = User.find(params[:id])
     end
 end
