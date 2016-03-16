@@ -1,6 +1,16 @@
 <div class="col-sm-3 col-sm-offset-4 text-center">
-    <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
+    <% if @user.avatar? %>
+        <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
+    <% else %>
+        <img src="/uploads/user/avatar/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
+    <% end %>
     <h1><%= @user.username %></h1>
     <h4 class="text-muted"><%= @user.nombre %> <%= @user.apellidos %></h4>
-    <%= link_to 'Edit Profile', edit_user_path(current_user) %>
+    <div class="row">
+        <div id="info">
+            <%= link_to '13 Leídos', '#', :class => 'btn btn-default', :title => 'Libros que ha leído' %> | 
+            <%= link_to '2 Comentados', '#', :class => 'btn btn-default', :title => 'Libros que ha comentado' %>
+        </div>
+    </div>
+    <%= link_to 'Editar contraseña', edit_user_path(current_user), :class => 'btn btn-primary' %>
 </div>
