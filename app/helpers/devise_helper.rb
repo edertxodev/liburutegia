@@ -1,0 +1,16 @@
+module DeviseHelper
+  # Integración de los mensajes de error de Devise con Bootstrap
+  def devise_error_messages!
+    return '' if resource.errors.empty?
+
+    messages = resource.errors.full_messages.map { |msg| content_tag(:p, msg) }.join
+    html = <<-HTML
+    <div class="alert alert-error alert-danger"> <button type="button"
+    class="close" data-dismiss="alert">×</button>
+      #{messages}
+    </div>
+    HTML
+
+    html.html_safe
+  end
+end
