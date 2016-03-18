@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    
     def show
         @user = current_user
     end
@@ -21,6 +22,6 @@ class UsersController < ApplicationController
     protected
         
         def user_params
-            params.require(:user).permit(:avatar)
+            params.require(:user).permit(:avatar, :role)
         end
 end
