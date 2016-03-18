@@ -46,6 +46,12 @@ a {
     }
 }
 
+.btn-danger {
+    &:hover {
+        background: #d43f3a !important;
+    }
+}
+
 .btn-default {
     color:#000 !important;
 }
@@ -110,6 +116,12 @@ a {
 
 #info {
     margin-bottom: 20px;
+}
+
+.thumb {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
 }
 
 /* Footer */

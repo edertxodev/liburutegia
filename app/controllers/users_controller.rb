@@ -9,23 +9,18 @@ class UsersController < ApplicationController
     
     def update
         @user = User.find(params[:id])
-        @user.update(user_params)
-        redirect_to current_user
-    end
-    
-    def update_password
-        @user = User.find(current_user.id)
-        if @user.update_with_password(user_params)
-          # Sign in the user by passing validation in case their password changed
-          sign_in @user, :bypass => true
-          redirect_to root_path
-        else
-          render root_path
+        respond_to do |format|
+          if @user.update(user_params)
+            format.html { redirect_to current_user, notice: 'El usuario se ha actualizado correctamente.' }
+          else
+            format.html { render :edit }
+          end
         end
     end
     
-    private
+    protected
+        
         def user_params
-            params.require(:user).permit(:username, :avatar, :nombre, :apellidos, :password, :password_confirmation, :current_password)
+            params.require(:user).permit(:avatar)
         end
 end

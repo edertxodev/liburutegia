@@ -12,5 +12,6 @@
             <%= link_to '2 Comentados', '#', :class => 'btn btn-default', :title => 'Libros que ha comentado' %>
         </div>
     </div>
-    <%= link_to 'Editar contraseña', edit_user_path(current_user), :class => 'btn btn-primary' %>
+    <%= link_to 'Cambiar avatar', edit_user_path(current_user), :class => 'btn btn-primary' %>
+    <%= link_to 'Cambiar contraseña', edit_user_registration_path(current_user), :class => 'btn btn-danger' %>
 </div>

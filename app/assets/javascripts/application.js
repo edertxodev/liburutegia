@@ -27,7 +27,7 @@ $(document).on('page:load', function(){
 });
 
 function cambiarColorEnlaces(){ 
-    $('.li-menu') .hover(function(){
+    $('.li-menu').hover(function(){
         $(this).css('background-color', 'rgb(0,0,120');
     }, function(){
         $(this).css('background-color', 'rgb(0,0,150');
