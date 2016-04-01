@@ -30,7 +30,7 @@
               <li><%= link_to 'Perfil', current_user %></li>
               <li role="separator" class="divider"></li>
               <% if current_user.role == "admin" %>
-                <li><%= link_to 'Panel de administración', '/admin' %></li>
+                <li><%= link_to 'Administrar usuarios', users_path %></li>
                 <li role="separator" class="divider"></li>
               <% end %>
               <li><%= link_to "Cerrar sesión", destroy_user_session_path, :method => :delete %></li>
