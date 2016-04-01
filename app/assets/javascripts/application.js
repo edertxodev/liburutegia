@@ -19,12 +19,31 @@
 // al acceder a la aplicación
 $(document).ready(function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+    // genera una clave cada vez que se recarga la página
+    $('.pass-aleatoria').each(function(){
+      $(this).val(passGenerator(8));
+    });
+    // genera una clave al pulsar el botón
+    $('.regenerar-pass').click(function(){
+      $('.pass-aleatoria').val(passGenerator(8));
+    });
 });
 
 // al cargar nuevas páginas
 $(document).on('page:load', function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+    // genera una clave cada vez que se recarga la página
+    $('.pass-aleatoria').each(function(){
+      $(this).val(passGenerator(8));
+    });
+    // genera una clave al pulsar el botón
+    $('.regenerar-pass').click(function(){
+      $('.pass-aleatoria').val(passGenerator(8));
+    });
 });
+
+
+// Funciones
 
 function cambiarColorEnlaces(){ 
     $('.li-menu').hover(function(){
@@ -32,4 +51,27 @@ function cambiarColorEnlaces(){
     }, function(){
         $(this).css('background-color', 'rgb(0,0,150');
     });
+}
+
+// generador de contraseñas
+function passGenerator(length, special) {
+  var iteration = 0;
+  var password = "";
+  var randomNumber;
+  if(special == undefined){
+      var special = false;
+  }
+  while(iteration < length){
+    randomNumber = (Math.floor((Math.random() * 100)) % 94) + 33;
+    if(!special){
+      if ((randomNumber >=33) && (randomNumber <=47)) { continue; }
+      if ((randomNumber >=58) && (randomNumber <=64)) { continue; }
+      if ((randomNumber >=91) && (randomNumber <=96)) { continue; }
+      if ((randomNumber >=123) && (randomNumber <=126)) { continue; }
+    }
+    iteration++;
+    password += String.fromCharCode(randomNumber);
+  }
+  
+  return password;
 }
