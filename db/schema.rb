@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318122641) do
+ActiveRecord::Schema.define(version: 20160401144157) do
 
   create_table "libros", force: :cascade do |t|
     t.string   "titulo",     limit: 255
@@ -43,9 +43,5 @@ ActiveRecord::Schema.define(version: 20160318122641) do
     t.string   "avatar",                 limit: 255
     t.string   "role",                   limit: 255
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end
