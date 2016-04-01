@@ -36,7 +36,7 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
         respond_to do |format|
           if @user.update(user_params)
-            format.html { redirect_to current_user, notice: 'El usuario se ha actualizado correctamente.' }
+            format.html { redirect_to users_path, notice: 'El usuario se ha actualizado correctamente.' }
           else
             format.html { render :edit }
           end

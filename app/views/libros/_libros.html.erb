@@ -5,11 +5,15 @@
     <tr>
       <th><%= sortable "titulo", "Titulo" %></th>
       <th><%= sortable "fregistro", "Fecha de registro" %></th>
+      <th><%= sortable "cantidad", "Nº de libros" %></th>
+      <th><%= sortable "disponibles", "Disponibles" %></th>
     </tr>
       <% @libros.each do |libro| %>
       <tr>
         <td><%= link_to libro.titulo, libro %></td>
         <td><%= libro.fregistro %></td>
+        <td><%= libro.cantidad %></td>
+        <td><%= libro.disponibles %></td>
       </tr>
       <% end %>
   </table>

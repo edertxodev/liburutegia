@@ -45,8 +45,16 @@
               <h4>ISBN</h4>
               <%= f.text_field :isbn, :class => 'form-control' %>
           </div>
+          <!-- grupo -->
+          <div class="form-group">
               <h4>Fecha de registro</h4>
               <%= f.date_select :fregistro, :class => 'form-control', order: [:day, :month, :year], use_month_numbers: true %>
+          </div>
+          <!-- grupo -->
+          <div class="form-group">
+            <h4>Cantidad</h4>
+            <%= f.number_field :cantidad, :class => 'form-control' %>
+          </div>
           <div class="text-right">
             <%= f.submit 'Guardar', :class => 'btn btn-primary' %>
             <%= link_to 'Cancelar', @libro, :class => 'btn btn-default' %>
