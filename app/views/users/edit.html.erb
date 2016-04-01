@@ -26,14 +26,12 @@
                 <h4>Cambiar rol</h4>
                 <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
             </div>
+        <% end %>
+        <% if current_user.role == 'admin' && current_user.username != @user.username %>
             <div class="row">
                 <h4>Cambiar contraseña</h4>
-                <div class="input-group">
-                    <%= f.text_field :password, autocomplete: "off", :class => 'form-control pass-aleatoria' %>
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default regenerar-pass"><span class="glyphicon glyphicon-refresh"></span></button>
-                    </span>
-                </div>
+                <small>Introduce una nueva contraseña si lo deseas</small>
+                <%= f.text_field :password, autocomplete: "off", :class => 'form-control' %>
             </div>
         <% end %>
           <div class="text-center">
