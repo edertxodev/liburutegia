@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, #:registerable,
          #:recoverable, 
          :rememberable, :trackable, :validatable, :authentication_keys => [:username] # Utiliza username para accederç
-  ROLES = %i[admin normal]
+  ROLES = %i[normal admin]
   
   def email_required?
     false

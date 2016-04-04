@@ -10,4 +10,12 @@ class ApplicationController < ActionController::Base
     flash[:error] = exception.message
     redirect_to '/'
   end
+  
+  # Función que comprueba si el usuario es admin
+  def acceso_admin
+    if current_user.role != "admin"
+      redirect_to '/'
+      flash[:error] = "No tienes acceso a esa sección"
+    end
+  end
 end

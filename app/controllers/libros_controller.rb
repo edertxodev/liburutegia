@@ -1,6 +1,7 @@
 class LibrosController < ApplicationController
-  before_action :set_libro, only: [:show, :edit, :update, :destroy]
   helper_method :sort_column, :sort_direction
+  before_filter :acceso_admin, only: [:edit, :update, :destroy, :new]
+  before_filter :set_libro, only: [:edit, :update, :show, :destroy]
 
   # GET /libros
   # GET /libros.json
@@ -71,7 +72,7 @@ class LibrosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def libro_params
-      params.require(:libro).permit(:titulo, :autor, :genero, :isbn, :portada, :fregistro)
+      params.require(:libro).permit(:titulo, :autor, :genero, :isbn, :portada, :fregistro, :cantidad, :disponibles)
     end
     
     # Orientación de las columnas

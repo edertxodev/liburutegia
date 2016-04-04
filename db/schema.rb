@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318122641) do
+ActiveRecord::Schema.define(version: 20160401164531) do
 
   create_table "libros", force: :cascade do |t|
-    t.string   "titulo",     limit: 255
-    t.string   "autor",      limit: 255
-    t.string   "genero",     limit: 255
-    t.integer  "isbn",       limit: 4
-    t.string   "portada",    limit: 255
+    t.string   "titulo",      limit: 255
+    t.string   "autor",       limit: 255
+    t.string   "genero",      limit: 255
+    t.integer  "isbn",        limit: 4
+    t.string   "portada",     limit: 255
     t.date     "fregistro"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.integer  "cantidad",                default: 0
+    t.integer  "disponibles"
   end
 
   create_table "users", force: :cascade do |t|
@@ -43,9 +45,5 @@ ActiveRecord::Schema.define(version: 20160318122641) do
     t.string   "avatar",                 limit: 255
     t.string   "role",                   limit: 255
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end
