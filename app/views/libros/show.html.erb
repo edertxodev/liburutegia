@@ -8,20 +8,17 @@
       <% end %>
     </div>
     <div class="col-sm-7">
-      <h1><%= @libro.titulo %></h1>
-      <p>Libro escrito por <%= link_to @libro.autor, "http://www.google.com/search?ie=UTF-8&q=#{@libro.autor}", :target => '_blank' %></p>
-      <div class="table-responsive">
-        <table class="table table-bordered">
-          <tr>
-            <td><b>Género: </b><%= @libro.genero %></td>
-          </tr>
-          <tr>
-            <td><b>ISBN: </b><%= @libro.isbn %></td>
-          </tr>
-          <tr>
-            <td><b>Fecha de registro: </b><%= @libro.fregistro.strftime('%d/%m/%Y') %></td>
-          </tr>
-        </table>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1><%= @libro.titulo %></h1>
+        </div>
+        <div class="panel-body">
+          <h3>Autor: <small><%= @libro.autor %> <small><%= link_to "Saber más", "http://www.google.com/search?ie=UTF-8&q=#{@libro.autor}", :target => '_blank', :title => "Sobre el autor" %></small></small></h3>
+          <h3>Género: <small><%= @libro.genero %></small></h3>
+          <h3>Idioma: <small><%= @libro.idioma.humanize %></small></h3>
+          <h3>ISBN: <small><%= @libro.isbn %></small></h3>
+          <h3>Fecha de registro: <small><%= @libro.fregistro.strftime('%d/%m/%Y') %></small></h3>
+        </div>
       </div>
       <div class="col-sm-6 col-sm-offset-6 text-right">
         <%= link_to 'Editar', edit_libro_path(@libro), :class => 'btn btn-primary' %>
