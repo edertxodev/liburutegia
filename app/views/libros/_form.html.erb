@@ -1,13 +1,16 @@
 <%= form_for(@libro) do |f| %>
   <% if @libro.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@libro.errors.count, "error") %> prohibited this libro from being saved:</h2>
-
-      <ul>
-      <% @libro.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h4><%= pluralize(@libro.errors.count, "error") %> impidió guardar el libro:</h4>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @libro.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
   
