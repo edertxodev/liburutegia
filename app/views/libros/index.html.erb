@@ -1,7 +1,7 @@
 <h1>Libros disponibles</h1>
 
 <div class="row">
-  <%= form_tag libros_path, :method => 'get', :id => 'form-buscar' do %>  
+  <%= form_tag libros_path, :method => 'get', :id => 'form-buscar-libros' do %>  
     <div class="col-sm-4 col-sm-offset-8">
       <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => 'Buscar' %>
     </div>
