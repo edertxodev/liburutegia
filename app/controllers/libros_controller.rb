@@ -88,7 +88,7 @@ class LibrosController < ApplicationController
     # Calcula el número de libros que hay disponibles
     def calc_disponibles
       # En principio se añaden los que hay en la cantidad
-      # Hasta que se integre la opción del préstamo
+      # hasta que se integre la opción del préstamo
       @libro.disponibles = @libro.cantidad
     end
 end
