@@ -28,6 +28,7 @@ class LibrosController < ApplicationController
   # POST /libros.json
   def create
     @libro = Libro.new(libro_params)
+    calc_disponibles
 
     respond_to do |format|
       if @libro.save
@@ -82,5 +83,12 @@ class LibrosController < ApplicationController
     
     def sort_direction
       %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+    end
+    
+    # Calcula el número de libros que hay disponibles
+    def calc_disponibles
+      # En principio se añaden los que hay en la cantidad
+      # Hasta que se integre la opción del préstamo
+      @libro.disponibles = @libro.cantidad
     end
 end
