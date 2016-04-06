@@ -73,7 +73,7 @@ class LibrosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def libro_params
-      params.require(:libro).permit(:titulo, :autor, :genero, :isbn, :portada, :fregistro, :cantidad, :disponibles)
+      params.require(:libro).permit(:titulo, :autor, :genero, :isbn, :portada, :fregistro, :cantidad, :disponibles, :idioma)
     end
     
     # Orientación de las columnas

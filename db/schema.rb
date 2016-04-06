@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406062604) do
+ActiveRecord::Schema.define(version: 20160406065414) do
 
   create_table "libros", force: :cascade do |t|
     t.string   "titulo",      limit: 255
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160406062604) do
     t.datetime "updated_at",                          null: false
     t.integer  "cantidad",                default: 0
     t.integer  "disponibles"
+    t.string   "idioma"
   end
 
   create_table "users", force: :cascade do |t|

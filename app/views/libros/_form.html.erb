@@ -47,6 +47,11 @@
           </div>
           <!-- grupo -->
           <div class="form-group">
+            <h4>Idioma</h4>
+            <%= f.collection_select(:idioma, Libro::IDIOMAS, :to_s, lambda{|i| i.to_s.humanize}) %>
+          </div>
+          <!-- grupo -->
+          <div class="form-group">
               <h4>Fecha de registro</h4>
               <%= f.date_select :fregistro, :class => 'form-control', order: [:day, :month, :year], use_month_numbers: true %>
           </div>

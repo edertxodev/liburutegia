@@ -5,6 +5,7 @@
     <tr>
       <th><%= sortable "titulo", "Titulo" %></th>
       <th><%= sortable "autor", "Autor" %></th>
+      <th><%= sortable "genero", "Género" %></th>
       <th><%= sortable "fregistro", "Fecha de registro" %></th>
       <th><%= sortable "cantidad", "Cantidad" %></th>
       <th><%= sortable "disponibles", "Disponibles" %></th>
@@ -13,6 +14,7 @@
       <tr>
         <td><%= link_to libro.titulo, libro %></td>
         <td><%= libro.autor %></td>
+        <td><%= libro.genero %></td>
         <td><%= libro.fregistro %></td>
         <td><%= libro.cantidad %></td>
         <td><%= libro.disponibles %></td>
