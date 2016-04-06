@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160401164531) do
+ActiveRecord::Schema.define(version: 20160406062604) do
 
   create_table "libros", force: :cascade do |t|
     t.string   "titulo",      limit: 255
     t.string   "autor",       limit: 255
     t.string   "genero",      limit: 255
-    t.integer  "isbn",        limit: 4
+    t.integer  "isbn",        limit: 8
     t.string   "portada",     limit: 255
     t.date     "fregistro"
     t.datetime "created_at",                          null: false
