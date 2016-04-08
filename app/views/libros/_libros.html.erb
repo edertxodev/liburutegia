@@ -12,7 +12,7 @@
     </tr>
       <% @libros.each do |libro| %>
       <tr>
-        <td class="tit"><%= link_to libro.titulo, libro %></td>
+        <td><%= link_to libro.titulo, libro %></td>
         <td><%= libro.autor %></td>
         <td><%= libro.genero %></td>
         <td class="fecha-registro"><%= libro.fregistro.to_time.strftime('%d/%m/%Y') %></td>

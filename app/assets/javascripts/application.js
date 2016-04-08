@@ -19,6 +19,8 @@
 // al acceder a la aplicación
 $(document).ready(function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+    // buscador libros AJAX
+    buscadorLibrosAjax();
     // genera una clave cada vez que se recarga la página
     $('.pass-aleatoria').each(function(){
       $(this).val(passGenerator(8));
@@ -32,6 +34,8 @@ $(document).ready(function(){
 // al cargar nuevas páginas
 $(document).on('page:load', function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
+    // buscador libros AJAX
+    buscadorLibrosAjax();
     // genera una clave cada vez que se recarga la página
     $('.pass-aleatoria').each(function(){
       $(this).val(passGenerator(8));
@@ -74,4 +78,16 @@ function passGenerator(length, special) {
   }
   
   return password;
+}
+
+// Buscador AJAX
+function buscadorLibrosAjax(){
+  $("#tabla-libros th a, #tabla-libros .pagination a").on("click", function() {
+    $.getScript(this.href);
+    return false;
+  });
+  $("#form-buscar-libros input").keyup(function() {
+    $.get($("#form-buscar-libros").attr("action"), $("#form-buscar-libros").serialize(), null, "script");
+    return false;
+  });
 }

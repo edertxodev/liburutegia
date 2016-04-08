@@ -1,4 +1,5 @@
 class Libro < ActiveRecord::Base
+  belongs_to :autor
     mount_uploader :portada, PortadaUploader
     
     # Para los idiomas
