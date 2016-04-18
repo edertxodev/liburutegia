@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     helper_method :sort_column, :sort_direction
-    before_filter :acceso_admin, only: [:update, :destroy, :new, :index]
+    before_filter :acceso_admin, only: [:destroy, :new, :index]
     
     def index
         @users = User.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 10, :page => params[:page])
