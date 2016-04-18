@@ -2,7 +2,7 @@
   <% if @libro.errors.any? %>
     <div class="panel panel-danger">
       <div class="panel-heading">
-        <h4><%= pluralize(@libro.errors.count, "error") %> impidió guardar el libro:</h4>
+        <h4><%= pluralize(@libro.errors.count, "error") %> <%= t("impidió guardar el libro:") %></h4>
       </div>
       <div class="panel-body">
         <ul>
@@ -19,10 +19,10 @@
       <div class="col-sm-5">
         <% if @libro.portada? %>
           <%= image_tag @libro.portada, :class => 'img-responsive portada img-thumbnail' %>
-          <h4>Cambiar portada</h4>
+          <h4><%= t("Cambiar portada") %></h4>
           <%= f.file_field :portada %>
         <% else %>
-          <h4>Elegir portada</h4>
+          <h4><%= t("Elegir portada") %></h4>
           <%= f.file_field :portada %>
         <% end %>
       </div>
@@ -30,37 +30,37 @@
         <form>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Titulo</h4>
+              <h4><%= t("titulo") %></h4>
               <%= f.text_field :titulo, :class => 'form-control' %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Autor</h4>
+              <h4><%= t("autor") %></h4>
               <%= f.text_field :autor, :class => 'form-control' %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Género</h4>
-              <%= f.text_field :genero, :class => 'form-control' %>
+              <h4><%= t("genero") %></h4>
+              <%= f.select :genero, Libro::GENEROS.map {|c| [t("libro.generos.#{c}"), c]} %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>ISBN</h4>
+              <h4><%= t("isbn") %></h4>
               <%= f.text_field :isbn, :class => 'form-control' %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-            <h4>Idioma</h4>
-            <%= f.collection_select(:idioma, Libro::IDIOMAS, :to_s, lambda{|i| i.to_s.humanize}) %>
+            <h4><%= t("idioma") %></h4>
+            <%= f.select :idioma, Libro::IDIOMAS.map {|c| [t("libro.idiomas.#{c}"), c]} %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Fecha de registro</h4>
+              <h4><%= t("fecha_reg") %></h4>
               <%= f.date_select :fregistro, :class => 'form-control', order: [:day, :month, :year], use_month_numbers: true %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-            <h4>Cantidad</h4>
+            <h4><%= t("cantidad") %></h4>
             <%= f.number_field :cantidad, :class => 'form-control' %>
           </div>
           <div class="text-right">

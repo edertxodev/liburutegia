@@ -27,6 +27,10 @@ eus:
     cerrar sesión: "Amaitu saioa"
     perfil: "Profila"
     administrar usuarios: "Erabiltzaileak editatu"
+    Buscar: "Bilatu"
+    Registrar nuevo libro: "Liburu berri bat erregistratu"
+    Cambiar portada: "Azala aldatu"
+    Elegir portada: "Azala hautatu"
     
     titulo: "Izenburua"
     autor: "Idazlea"
@@ -35,6 +39,34 @@ eus:
     fecha_reg: "Erregistro data"
     cantidad: "Kopurua"
     disponibles: "Eskuragarri"
+    isbn: "ISBN"
+    
+    # -- Generos
+    libro:
+        generos:
+            AUTOBIOGRAFIA: "Autobiografia"
+            AVENTURAS: "Abenturak"
+            Aventuras: "Abenturak"
+            BELICO: "Belikoa"
+            FICCION: "Fikzioa"
+            DETECTIVES: "Detektibeak"
+            FANTASIA: "Fantasia"
+            HUMOR: "Komeria"
+            HISTORIA: "Historia"
+            JUVENIL: "Gazteentzako"
+            NARRATIVA: "Narratiba"
+            POLICIACO: "Poliziak"
+            VIAJES: "Bidaiak"
+            THRILLER: "Thrillerra"
+            TERROR: "Ikara"
+            Cómic: "Komikia"
+            Informática: "Informatika"
+        idiomas:
+            castellano: "Gaztelania"
+            euskera: "Esukera"
+            inglés: "Ingelesa"
+            francés: "Frantsesa"
+            otros: "Besteak"
     
     # USUARIOS
     

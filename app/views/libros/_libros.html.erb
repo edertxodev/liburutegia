@@ -14,7 +14,7 @@
       <tr>
         <td><%= link_to libro.titulo, libro %></td>
         <td><%= libro.autor %></td>
-        <td><%= libro.genero %></td>
+        <td><%= t("libro.generos.#{libro.genero}") %></td>
         <td class="fecha-registro"><%= libro.fregistro.to_time.strftime('%d/%m/%Y') %></td>
         <td><%= libro.cantidad %></td>
         <td><%= libro.disponibles %></td>

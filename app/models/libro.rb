@@ -2,7 +2,29 @@ class Libro < ActiveRecord::Base
     mount_uploader :portada, PortadaUploader
     
     # Para los idiomas
-    IDIOMAS = %i[gaztelania euskera ingelesa frantsesa besteak]
+    IDIOMAS = %i[ castellano 
+                  euskera 
+                  inglés 
+                  francés 
+                  otros]
+                  
+    GENEROS = %i{ AUTOBIOGRAFIA
+                  AVENTURAS
+                  BELICO
+                  FICCION
+                  DETECTIVES
+                  FANTASIA
+                  HUMOR
+                  HISTORIA
+                  JUVENIL
+                  NARRATIVA
+                  POLICIACO
+                  VIAJES
+                  THRILLER
+                  TERROR }
+                  
+    validates_inclusion_of :genero, :in => GENEROS
+    validates_inclusion_of :idioma, :in => IDIOMAS
     
     # Para la búsqueda
     def self.search(search)

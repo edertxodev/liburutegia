@@ -1,9 +1,9 @@
-<h1><%= t("index_libros") %></h1>
+<h1 class="page-header"><%= t("index_libros") %></h1>
 
 <div class="row">
   <%= form_tag libros_path, :method => 'get', :id => 'form-buscar-libros' do %>  
     <div class="col-sm-4 col-sm-offset-8">
-      <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => 'Buscar' %>
+      <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => t('Buscar') %>
     </div>
   <% end %>
 </div>
