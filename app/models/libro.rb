@@ -2,7 +2,7 @@ class Libro < ActiveRecord::Base
     mount_uploader :portada, PortadaUploader
     
     # Para los idiomas
-    IDIOMAS = %i[castellano euskera inglés francés]
+    IDIOMAS = %i[gaztelania euskera ingelesa frantsesa besteak]
     
     # Para la búsqueda
     def self.search(search)

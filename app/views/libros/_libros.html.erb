@@ -3,12 +3,12 @@
   
   <table class="table table-bordered table-hover">
     <tr>
-      <th><%= sortable "titulo", "Titulo" %></th>
-      <th><%= sortable "autor", "Autor" %></th>
-      <th><%= sortable "genero", "Género" %></th>
-      <th><%= sortable "fregistro", "Fecha de registro" %></th>
-      <th><%= sortable "cantidad", "Cantidad" %></th>
-      <th><%= sortable "disponibles", "Disponibles" %></th>
+      <th><%= sortable "titulo", t("titulo") %></th>
+      <th><%= sortable "autor", t("autor") %></th>
+      <th><%= sortable "genero", t("genero") %></th>
+      <th><%= sortable "fregistro", t("fecha_reg") %></th>
+      <th><%= sortable "cantidad", t("cantidad") %></th>
+      <th><%= sortable "disponibles", t("disponibles") %></th>
     </tr>
       <% @libros.each do |libro| %>
       <tr>
