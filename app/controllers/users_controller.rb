@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-    before_filter :acceso_admin, only: [:edit, :update, :destroy, :new, :index]
+    helper_method :sort_column, :sort_direction
+    before_filter :acceso_admin, only: [:update, :destroy, :new, :index]
     
     def index
-        @users = User.all.paginate(:per_page => 10, :page => params[:page])
+        @users = User.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 10, :page => params[:page])
     end
     
     def show
@@ -44,9 +45,18 @@ class UsersController < ApplicationController
         end
     end
     
-    protected
+    private
         
         def user_params
             params.require(:user).permit(:avatar, :role, :password, :username)
+        end
+        
+        # Orientación de las columnas
+        def sort_column
+          User.column_names.include?(params[:sort]) ? params[:sort] : "username"
+        end
+        
+        def sort_direction
+          %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
         end
 end

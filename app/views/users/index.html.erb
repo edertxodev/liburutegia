@@ -1,7 +1,18 @@
 <h1 class="page-header">Usuarios</h1>
 
-<%= link_to 'Crear usuario', new_user_path, :class => 'btn btn-info' %>
+<div class="row">
+    <div class="col-sm-6">
+        <%= link_to 'Crear usuario', new_user_path, :class => 'btn btn-info' %>
+    </div>
+    <div class="col-sm-6">
+        <%= form_tag users_path, :method => 'get', :id => 'form-buscar-usuarios' do %>  
+        <div class="col-sm-6 col-sm-offset-6">
+          <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => 'Buscar' %>
+        </div>
+        <% end %>
+    </div>
+</div>
 
-<div class="table-responsive" id="tabla-libros">
+<div class="table-responsive" id="tabla-users">
   <%= render 'usuarios' %>
 </div>

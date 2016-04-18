@@ -1,10 +1,10 @@
 class Libro < ActiveRecord::Base
-  belongs_to :autor
     mount_uploader :portada, PortadaUploader
     
     # Para los idiomas
     IDIOMAS = %i[castellano euskera inglés francés]
     
+    # Para la búsqueda
     def self.search(search)
       if search
         self.where('titulo LIKE ?', "%#{search}%")

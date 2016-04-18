@@ -16,8 +16,18 @@
                 <h4>Cambiar imagen</h4>
                 <%= f.file_field :avatar %>            
             </div>
+            <% if current_user.role == 'admin' %>
+                <div class="row">
+                    <h4>Cambiar nombre de usuario</h4>
+                    <%= f.text_field :username, :class => 'form-control' %>
+                </div>
+                <div class="row">
+                    <h4>Cambiar rol</h4>
+                    <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+                </div>
+            <% end %>
         <% end %>
-        <% if current_user.role == 'admin' %>
+        <% if current_user.role == 'admin' && current_user.username != @user.username %>
             <div class="row">
                 <h4>Cambiar nombre de usuario</h4>
                 <%= f.text_field :username, :class => 'form-control' %>
@@ -26,8 +36,6 @@
                 <h4>Cambiar rol</h4>
                 <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
             </div>
-        <% end %>
-        <% if current_user.role == 'admin' && current_user.username != @user.username %>
             <div class="row">
                 <h4>Cambiar contraseña</h4>
                 <small>Introduce una nueva contraseña si lo deseas</small>

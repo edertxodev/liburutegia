@@ -18,4 +18,13 @@ class User < ActiveRecord::Base
   def role?(role)
       return !!self.roles.find_by_name(role.to_s.camelize)
   end
+  
+  # Para la búsqueda
+  def self.search(search)
+    if search
+      self.where('username LIKE ?', "%#{search}%")
+    else
+      self.all
+    end
+  end
 end

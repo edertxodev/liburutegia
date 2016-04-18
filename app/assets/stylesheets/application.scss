@@ -52,6 +52,12 @@ a {
     }
 }
 
+.btn-info {
+    &:hover {
+        background: #46b8da !important;
+    }
+}
+
 .btn-default {
     color:#000 !important;
 }

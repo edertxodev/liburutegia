@@ -21,6 +21,8 @@ $(document).ready(function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
     // buscador libros AJAX
     buscadorLibrosAjax();
+    // buscador usuarios AJAX
+    buscadorUsersAjax();
     // genera una clave cada vez que se recarga la página
     $('.pass-aleatoria').each(function(){
       $(this).val(passGenerator(8));
@@ -36,6 +38,8 @@ $(document).on('page:load', function(){
     cambiarColorEnlaces(); // Al pasar sobre los elementos del menú cambian de color
     // buscador libros AJAX
     buscadorLibrosAjax();
+    // buscador usuarios AJAX
+    buscadorUsersAjax();
     // genera una clave cada vez que se recarga la página
     $('.pass-aleatoria').each(function(){
       $(this).val(passGenerator(8));
@@ -80,7 +84,7 @@ function passGenerator(length, special) {
   return password;
 }
 
-// Buscador AJAX
+// Buscador AJAX Libros
 function buscadorLibrosAjax(){
   $("#tabla-libros th a, #tabla-libros .pagination a").on("click", function() {
     $.getScript(this.href);
@@ -88,6 +92,18 @@ function buscadorLibrosAjax(){
   });
   $("#form-buscar-libros input").keyup(function() {
     $.get($("#form-buscar-libros").attr("action"), $("#form-buscar-libros").serialize(), null, "script");
+    return false;
+  });
+}
+
+// Buscador AJAX Usuarios
+function buscadorUsersAjax(){
+  $("#tabla-users th a, #tabla-users .pagination a").on("click", function() {
+    $.getScript(this.href);
+    return false;
+  });
+  $("#form-buscar-usuarios input").keyup(function() {
+    $.get($("#form-buscar-usuarios").attr("action"), $("#form-buscar-usuarios").serialize(), null, "script");
     return false;
   });
 }
