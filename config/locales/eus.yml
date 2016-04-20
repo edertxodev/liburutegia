@@ -40,6 +40,10 @@ eus:
     cantidad: "Kopurua"
     disponibles: "Eskuragarri"
     isbn: "ISBN"
+    Saber más: "Idazleari buruz"
+    De veras quieres eliminar este libro?: "Zihur zaude liburu hau ezabatu nahi duzula?"
+    eliminar libro: "Liburua ezabatu"
+    Editar libro: "Liburua editatu"
     
     
     # -- Generos
@@ -81,6 +85,9 @@ eus:
                             inclusion: "ezin izan da sartu"
                         idioma:
                             inclusion: "ezin da sartu"
+    date:
+        formats:
+            corta: "%Y/%m/%d"
     # DEVISE
     devise:
         failure:
@@ -89,3 +96,10 @@ eus:
         sessions:
             user:
                 signed_in: "Saioa ondo hasi duzu! Ongi etorri!"
+                
+    # BOTONES
+    Editar: "Editatu"
+    Atrás: "Atzera"
+    Prestar libro: "Mailegatu"
+    Guardar: "Gorde"
+    Cancelar: "Ezeztatu"

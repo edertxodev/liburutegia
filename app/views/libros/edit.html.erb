@@ -1,6 +1,6 @@
-<h1>Editar libro</h1>
+<h1><%= t('Editar libro') %></h1>
 <div class="col-sm-12 text-right">
-    <%= link_to @libro, method: :delete, data: { confirm: '¿De veras quieres eliminar este libro?' } do %>
+    <%= link_to @libro, method: :delete, title: t('eliminar libro'), data: { confirm: t('De veras quieres eliminar este libro?') } do %>
         <span class="glyphicon glyphicon-remove"></span>
     <% end %>
 </div>
