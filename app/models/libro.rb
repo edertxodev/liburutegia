@@ -18,12 +18,13 @@ class Libro < ActiveRecord::Base
                   :POLICIACO,
                   :VIAJES,
                   :THRILLER,
-                  :TERROR]
+                  :TERROR,
+                  :COMIC]
     
     # Para la búsqueda
     def self.search(search)
       if search
-        self.where('titulo LIKE ?', "%#{search}%")
+        self.where('titulo LIKE ? OR autor LIKE ?', "%#{search}%", "%#{search}%")
       else
         self.all
       end

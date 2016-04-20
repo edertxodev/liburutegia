@@ -13,9 +13,9 @@
           <h1><%= @libro.titulo %></h1>
         </div>
         <div class="panel-body">
-          <h3><%= t('autor') %>: <small><%= @libro.autor %> <small><%= link_to t("Saber más"), "http://www.google.com/search?ie=UTF-8&q=#{@libro.autor}", :target => '_blank', :title => "Sobre el autor" %></small></small></h3>
-          <h3><%= t('genero') %>: <small><%= @libro.genero %></small></h3>
-          <h3><%= t('idioma') %>: <small><%= @libro.idioma.humanize %></small></h3>
+          <h3><%= t('autor') %>: <small><%= @libro.autor %> <small><%= link_to t("Saber más"), "http://www.google.com/search?ie=UTF-8&q=#{@libro.autor}", :target => '_blank' %></small></small></h3>
+          <h3><%= t('genero') %>: <small><%= t("libro.generos.#{@libro.genero}") %></small></h3>
+          <h3><%= t('idioma') %>: <small><%= t("libro.idiomas.#{@libro.idioma}") %></small></h3>
           <h3><%= t('isbn') %>: <small><%= @libro.isbn %></small></h3>
           <h3><%= t('fecha_reg') %>: <small><%= I18n.l @libro.fregistro, :format => :corta %></small></h3>
         </div>

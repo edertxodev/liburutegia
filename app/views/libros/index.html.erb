@@ -3,7 +3,7 @@
 <div class="row">
   <%= form_tag libros_path, :method => 'get', :id => 'form-buscar-libros' do %>  
     <div class="col-sm-4 col-sm-offset-8">
-      <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => t('Buscar') %>
+      <%= text_field_tag :search, params[:search], :class => 'form-control', :placeholder => t('Buscar'), :title => t('buscar libro') %>
     </div>
   <% end %>
 </div>

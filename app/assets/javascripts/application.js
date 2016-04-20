@@ -35,6 +35,11 @@ $(document).ready(function(){
     $('.datepicker').datepicker({
       format: "dd/mm/yyyy",
       weekStart: 0,
+      autoclose: true,
+      language: "es",
+      todayHighlight: true,
+      startDate: "31/12/1990",
+      endDate: "31/12/2050"
     });
 });
 
