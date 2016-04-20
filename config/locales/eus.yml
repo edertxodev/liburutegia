@@ -27,7 +27,7 @@ eus:
     cerrar sesión: "Amaitu saioa"
     perfil: "Profila"
     administrar usuarios: "Erabiltzaileak editatu"
-    Buscar: "Bilatu"
+    Buscar: "Bilatu liburua"
     Registrar nuevo libro: "Liburu berri bat erregistratu"
     Cambiar portada: "Azala aldatu"
     Elegir portada: "Azala hautatu"
@@ -40,6 +40,7 @@ eus:
     cantidad: "Kopurua"
     disponibles: "Eskuragarri"
     isbn: "ISBN"
+    
     
     # -- Generos
     libro:
@@ -71,10 +72,15 @@ eus:
     # USUARIOS
     
     # OTROS
-    
-    
-    
-    
+    activerecord:
+        errors:
+            models:
+                libro:
+                    attributes:
+                        genero:
+                            inclusion: "ezin izan da sartu"
+                        idioma:
+                            inclusion: "ezin da sartu"
     # DEVISE
     devise:
         failure:

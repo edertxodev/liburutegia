@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap-datepicker3
  */
  
 @import "bootstrap-sprockets";
@@ -98,6 +99,10 @@ a {
     &:hover {
         color: rgb(120,0,0);
     }
+}
+
+.select-fecha {
+    border: 1px solid rgb(204,204,204);
 }
 
 /* Tablas */

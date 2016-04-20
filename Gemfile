@@ -11,6 +11,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'will_paginate-bootstrap'
 # CanCan
 gem 'cancancan', '~> 1.10'
+# DatePicker
+gem 'bootstrap-datepicker-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

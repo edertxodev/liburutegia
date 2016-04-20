@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap-datepicker
 //= require_tree .
 
 // al acceder a la aplicación
@@ -31,6 +32,10 @@ $(document).ready(function(){
     $('.regenerar-pass').click(function(){
       $('.pass-aleatoria').val(passGenerator(8));
     });
+    $('.datepicker').datepicker({
+      format: "dd/mm/yyyy",
+      weekStart: 0,
+    });
 });
 
 // al cargar nuevas páginas
@@ -47,6 +52,10 @@ $(document).on('page:load', function(){
     // genera una clave al pulsar el botón
     $('.regenerar-pass').click(function(){
       $('.pass-aleatoria').val(passGenerator(8));
+    });
+    $('.datepicker').datepicker({
+      format: "dd/mm/yyyy",
+      weekStart: 0,
     });
 });
 

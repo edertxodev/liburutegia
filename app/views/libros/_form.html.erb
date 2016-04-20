@@ -41,7 +41,7 @@
           <!-- grupo -->
           <div class="form-group">
               <h4><%= t("genero") %></h4>
-              <%= f.select :genero, Libro::GENEROS.map {|c| [t("libro.generos.#{c}"), c]} %>
+              <%= f.select :genero, Libro.generos.keys.to_a.map {|c| [t("libro.generos.#{c}"), c]}, {}, {class: 'form-control'} %>
           </div>
           <!-- grupo -->
           <div class="form-group">
@@ -51,12 +51,12 @@
           <!-- grupo -->
           <div class="form-group">
             <h4><%= t("idioma") %></h4>
-            <%= f.select :idioma, Libro::IDIOMAS.map {|c| [t("libro.idiomas.#{c}"), c]} %>
+            <%= f.select :idioma, Libro.idiomas.keys.to_a.map {|c| [t("libro.idiomas.#{c}"), c]}, {}, {class: 'form-control'} %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4><%= t("fecha_reg") %></h4>
-              <%= f.date_select :fregistro, :class => 'form-control', order: [:day, :month, :year], use_month_numbers: true %>
+            <h4><%= t("fecha_reg") %></h4>
+            <%= f.text_field :fregistro, :class => 'form-control datepicker' %>
           </div>
           <!-- grupo -->
           <div class="form-group">

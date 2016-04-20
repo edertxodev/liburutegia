@@ -11,16 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406195748) do
-
-  create_table "autors", force: :cascade do |t|
-    t.string   "nombre"
-    t.integer  "libro_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "autors", ["libro_id"], name: "index_autors_on_libro_id"
+ActiveRecord::Schema.define(version: 20160420062017) do
 
   create_table "libros", force: :cascade do |t|
     t.string   "titulo",      limit: 255
