@@ -1,0 +1,15 @@
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Libro</th>
+        <th>Usuario</th>
+        <th>Fecha solicitud</th>
+    </tr>
+      <% @solicitudes.each do |s| %>
+      <tr>
+        <td><%= s.libro %></td>
+        <td><%= s.username %></td>
+        <td><%= s.created_at %></td>
+      </tr>
+      <% end %>
+  </table>
+  <%= will_paginate @solicitudes, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>

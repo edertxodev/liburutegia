@@ -3,6 +3,7 @@ eus:
     index_libros: "Eskolako liburuak"
     inicio: "Hasiera"
     nuevo_libro: "Liburu berria"
+    solicitudes: "Eskaerak"
     cerrar sesión: "Amaitu saioa"
     perfil: "Profila"
     administrar usuarios: "Erabiltzaileak editatu"
@@ -73,12 +74,14 @@ eus:
         failure:
           user:
             unauthenticated: "Saioa hasi behar duzu aplikazioan sartzeko."
+            invalid: "Erabiltzailea edo pasahitza ez dira zuzenak."
         sessions:
             user:
                 signed_in: "Saioa ondo hasi duzu! Ongi etorri!"
                 
     # BOTONES
     Editar: "Editatu"
+    Pedir libro: "Liburua eskatu"
     Atrás: "Atzera"
     Prestar libro: "Mailegatu"
     Guardar: "Gorde"

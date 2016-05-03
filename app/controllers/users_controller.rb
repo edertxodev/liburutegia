@@ -45,6 +45,10 @@ class UsersController < ApplicationController
         end
     end
     
+    def solicitudes
+        @solicitudes = Solicutuds.all
+    end
+    
     private
         
         def user_params

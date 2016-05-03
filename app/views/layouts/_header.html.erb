@@ -17,6 +17,8 @@
             <li class="li-menu"><%= link_to t('inicio'), root_path %></li>
             <% if current_user.role == "admin" %>
             <li class="li-menu"><%= link_to t('nuevo_libro'), new_libro_path %></li>
+            <li class="li-menu"><%= link_to t('solicitudes'), solicitudes_path %></li>
+            <li class="li-menu"><span class="num-solicitudes">3</span></li>
             <% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right">

@@ -75,6 +75,13 @@ a {
         }
     }
     
+    .num-solicitudes {
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 3px;
+        background: red;
+    }
+    
     /* Cuando el dropdown está abierto */
     .navbar-default .navbar-nav > .open > a, 
     .navbar-default .navbar-nav > .open > a:hover, 
