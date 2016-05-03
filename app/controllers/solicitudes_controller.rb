@@ -21,10 +21,14 @@ class SolicitudesController < ApplicationController
     def aceptar_solicitud
         s = Solicituds.find(params[:id])
         l = Libro.find(params[:libro_id])
-        s.update_attribute(:aceptado, true)
-        # Resta en uno el número de libros disponibles
-        l.update_attribute(:disponibles, l.disponibles - 1)
-        redirect_to solicitudes_path, notice: "Se ha aceptado la solicitud"
+        if l.disponibles?
+            s.update_attribute(:aceptado, true)
+            # Resta en uno el número de libros disponibles
+            l.update_attribute(:disponibles, l.disponibles - 1)
+            redirect_to solicitudes_path, notice: "Se ha aceptado la solicitud"
+        else
+            redirect_to solicitudes_path, notice: "No se puede aceptar la solicitud. No hay más libros disponibles hast que se devuelvan"
+        end
     end
     
     def show

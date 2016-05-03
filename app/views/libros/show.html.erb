@@ -22,7 +22,6 @@
       </div>
       <% if current_user.role == "admin" %>
       <div class="col-sm-8 col-sm-offset-4 text-right">
-        <%= link_to t('Prestar libro'), "#", :class => 'btn btn-info' %>
         <%= link_to t('Editar'), edit_libro_path(@libro), :class => 'btn btn-primary' %>
         <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
       </div>

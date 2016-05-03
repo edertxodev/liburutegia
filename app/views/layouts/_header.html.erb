@@ -18,10 +18,13 @@
             <% if current_user.role == "admin" %>
             <li class="li-menu"><%= link_to t('nuevo_libro'), new_libro_path %></li>
             <li class="li-menu"><%= link_to t('solicitudes'), solicitudes_path %></li>
-            <% if num_solicitudes_pendientes > 0 %>
-              <li class="li-menu"><span class="num-solicitudes"><%= num_solicitudes_pendientes %></span></li>
-            <% end %>
-            <li><%= link_to t('devoluciones'), devolver_libro_path %></li>
+              <% if num_solicitudes_pendientes > 0 %>
+                <li class="li-menu"><span class="num-solicitudes"><%= num_solicitudes_pendientes %></span></li>
+              <% end %>
+              <li><%= link_to t('devoluciones'), devolver_libro_path %></li>
+              <% if num_solicitudes_aceptadas > 0 %>
+                <li class="li-menu"><span class="num-solicitudes"><%= num_solicitudes_aceptadas %></span></li>
+              <% end %>
             <% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
