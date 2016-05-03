@@ -3,12 +3,14 @@
         <th>Libro</th>
         <th>Usuario</th>
         <th>Fecha solicitud</th>
+        <th>Aceptar</th>
     </tr>
-      <% @solicitudes.each do |s| %>
+      <% @solicitudes.where(aceptado: false).each do |s| %>
       <tr>
         <td><%= s.libro %></td>
         <td><%= s.username %></td>
         <td><%= s.created_at %></td>
+        <td><%= link_to image_tag('check.png'), {:controller => 'solicitudes', :action => 'aceptar_solicitud', :id => s.id} %></td>
       </tr>
       <% end %>
   </table>

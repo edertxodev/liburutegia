@@ -16,6 +16,12 @@ class SolicitudesController < ApplicationController
         end
     end
     
+    def aceptar_solicitud
+        s = Solicituds.find(params[:id])
+        s.update_attribute(:aceptado, true)
+        redirect_to solicitudes_path, notice: "Se ha aceptado la solicitud"
+    end
+    
     private
         def solicitud_params
             params.require(:libro_alquiler).permit(:libro_id, :libro, :user_id, :username)

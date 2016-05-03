@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   resources :users
   resources :libros
   resources :solicitudes
+  
   get 'users/:id/solicitudes' => 'users#solicitudes', as: 'user_solicitudes'
+  get 'solicitudes/:id/confirmar' => 'solicitudes#aceptar_solicitud'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,4 +1,6 @@
-<table class="table table-bordered table-hover">
+<h1 class="page-header"><%= t('libros leidos') %></h1>
+<% if num_solicitudes_hechas > 0 %>
+  <table class="table table-bordered table-hover">
     <tr>
         <th>Libro</th>
         <th>Usuario</th>
@@ -13,3 +15,6 @@
       <% end %>
   </table>
   <%= will_paginate @solicitudes, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
+<% else %>
+  <h4><%= t('Todavía no has leído ningún libro') %></h4>
+<% end %>

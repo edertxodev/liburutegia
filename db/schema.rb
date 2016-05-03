@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160502082141) do
+ActiveRecord::Schema.define(version: 20160503120606) do
 
   create_table "libros", force: :cascade do |t|
     t.string   "titulo",      limit: 255
@@ -30,10 +30,11 @@ ActiveRecord::Schema.define(version: 20160502082141) do
   create_table "solicituds", force: :cascade do |t|
     t.string   "libro_id"
     t.string   "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "username"
     t.string   "libro"
+    t.boolean  "aceptado",   default: false
   end
 
   create_table "users", force: :cascade do |t|
