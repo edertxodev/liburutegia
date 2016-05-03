@@ -3,6 +3,10 @@ module SolicitudesHelper
         Solicituds.where(aceptado: false).count
     end
     
+    def num_solicitudes_aceptadas
+        Solicituds.where(aceptado: true).count
+    end
+    
     def num_solicitudes_hechas
         Solicituds.where(user_id: current_user.id).count
     end

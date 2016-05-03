@@ -1,5 +1,5 @@
 class SolicitudesController < ApplicationController
-    before_filter :acceso_admin, only: [:destroy, :new, :index]
+    before_filter :acceso_admin, only: [:destroy, :index]
     
     def index
         @solicitudes = Solicituds.all.paginate(:per_page => 10, :page => params[:page])
@@ -20,8 +20,24 @@ class SolicitudesController < ApplicationController
     
     def aceptar_solicitud
         s = Solicituds.find(params[:id])
+        l = Libro.find(params[:libro_id])
         s.update_attribute(:aceptado, true)
+        # Resta en uno el número de libros disponibles
+        l.update_attribute(:disponibles, l.disponibles - 1)
         redirect_to solicitudes_path, notice: "Se ha aceptado la solicitud"
+    end
+    
+    def show
+        @solicitudes = Solicituds.all.paginate(:per_page => 10, :page => params[:page])
+    end
+    
+    def devolver_libro
+        s = Solicituds.find(params[:id])
+        l = Libro.find(params[:libro_id])
+        s.destroy
+        # Suma en uno el número de libros disponibles
+        l.update_attribute(:disponibles, l.disponibles + 1)
+        redirect_to devolver_libro_path, notice: "Se ha devuelto el libro"
     end
     
     private

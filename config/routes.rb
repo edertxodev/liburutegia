@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   
   get 'users/:id/solicitudes' => 'users#solicitudes', as: 'user_solicitudes'
   get 'solicitudes/:id/confirmar' => 'solicitudes#aceptar_solicitud'
+  get 'solicitudes/:id/devolver' => 'solicitudes#devolver_libro'
+  get 'solicitudes/devolver' => 'solicitudes#devolver_libro', as: 'devolver_libro'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

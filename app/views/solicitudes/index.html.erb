@@ -1,4 +1,6 @@
-<table class="table table-bordered table-hover">
+<h1 class="page-header"><%= t('solicitudes pendientes') %></h1>
+<% if num_solicitudes_pendientes > 0 %>
+  <table class="table table-bordered table-hover">
     <tr>
         <th>Libro</th>
         <th>Usuario</th>
@@ -10,8 +12,11 @@
         <td><%= s.libro %></td>
         <td><%= s.username %></td>
         <td><%= I18n.l s.created_at, :format => :corta %></td>
-        <td><%= link_to image_tag('check.png'), {:controller => 'solicitudes', :action => 'aceptar_solicitud', :id => s.id} %></td>
+        <td><%= link_to '', {:controller => 'solicitudes', :action => 'aceptar_solicitud', :id => s.id, :libro_id => s.libro_id}, :class => 'glyphicon glyphicon-ok' %></td>
       </tr>
       <% end %>
   </table>
   <%= will_paginate @solicitudes, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
+<% else %>
+  <h4><%= t('no hay solicitudes pendientes') %></h4>
+<% end %>

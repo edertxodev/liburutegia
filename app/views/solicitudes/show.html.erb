@@ -1,0 +1,22 @@
+<h1 class="page-header"><%= t('libros para devolver') %></h1>
+<% if num_solicitudes_aceptadas > 0 %>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Libro</th>
+            <th>Usuario</th>
+            <th>Fecha solicitud</th>
+            <th>Devolver libro</th>
+        </tr>
+          <% @solicitudes.where(aceptado: true).each do |s| %>
+          <tr>
+            <td><%= s.libro %></td>
+            <td><%= s.username %></td>
+            <td><%= I18n.l s.created_at, :format => :corta %></td>
+            <td><%= link_to '', {:controller => 'solicitudes', :action => 'devolver_libro', :id => s.id, :libro_id => s.libro_id}, :class => 'glyphicon glyphicon-share-alt', :title => "devolver libro" %></td>
+          </tr>
+          <% end %>
+      </table>
+      <%= will_paginate @solicitudes, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
+<% else %>
+    <h4><%= t('no hay libros para devolver') %></h4>
+<% end %>
