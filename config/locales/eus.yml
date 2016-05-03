@@ -69,6 +69,10 @@ eus:
     date:
         formats:
             corta: "%Y/%m/%d"
+            
+    time:
+        formats:
+            corta: "%Y/%m/%d"
     # DEVISE
     devise:
         failure:

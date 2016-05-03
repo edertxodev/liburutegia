@@ -1,4 +1,6 @@
 class SolicitudesController < ApplicationController
+    before_filter :acceso_admin, only: [:destroy, :new, :index]
+    
     def index
         @solicitudes = Solicituds.all.paginate(:per_page => 10, :page => params[:page])
     end
