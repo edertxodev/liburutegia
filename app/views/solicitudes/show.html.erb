@@ -12,7 +12,13 @@
             <td><%= s.libro %></td>
             <td><%= s.username %></td>
             <td><%= I18n.l s.created_at, :format => :corta %></td>
-            <td><%= link_to '', {:controller => 'solicitudes', :action => 'devolver_libro', :id => s.id, :libro_id => s.libro_id}, :class => 'glyphicon glyphicon-share-alt', :title => "devolver libro" %></td>
+            <td><%= link_to '', {:controller => 'leidos', :action => 'devolver_libro', :id => s.id, :libro_id => s.libro_id, :libro_leido => {
+                    :libro_id => s.libro_id,
+                    :user_id => s.user_id,
+                    :libro => s.libro,
+                    :username => s.username,
+                    :fecha_leido => Time.now
+            }}, :class => 'glyphicon glyphicon-share-alt', :title => "devolver libro" %></td>
           </tr>
           <% end %>
       </table>

@@ -40,7 +40,7 @@
             
             <ul class="dropdown-menu">
               <li><%= link_to t('perfil'), current_user %></li>
-              <li><%=link_to t('mis solicitudes'), user_solicitudes_path(current_user.id) %></li>
+              <li><%=link_to t('Libros leidos'), user_libros_leidos_path(current_user.id) %></li>
               <li role="separator" class="divider"></li>
               <% if current_user.role == "admin" %>
                 <li><%= link_to t('administrar usuarios'), users_path %></li>

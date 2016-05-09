@@ -8,10 +8,11 @@ Rails.application.routes.draw do
   resources :users
   resources :libros
   resources :solicitudes
+  resources :leidos
   
-  get 'users/:id/solicitudes' => 'users#solicitudes', as: 'user_solicitudes'
+  get 'users/:id/libros-leidos' => 'leidos#libros_leidos_usuario', as: 'user_libros_leidos'
   get 'solicitudes/:id/confirmar' => 'solicitudes#aceptar_solicitud'
-  get 'solicitudes/:id/devolver' => 'solicitudes#devolver_libro'
+  get 'solicitudes/:id/devolver' => 'leidos#devolver_libro'
   get 'solicitudes/devolver' => 'solicitudes#devolver_libro', as: 'devolver_libro'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

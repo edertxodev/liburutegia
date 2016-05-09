@@ -45,10 +45,6 @@ class UsersController < ApplicationController
         end
     end
     
-    def solicitudes
-        @solicitudes = Solicituds.where(username: current_user.username).paginate(:per_page => 10, :page => params[:page])
-    end
-    
     private
         
         def user_params

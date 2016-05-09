@@ -27,21 +27,12 @@ class SolicitudesController < ApplicationController
             l.update_attribute(:disponibles, l.disponibles - 1)
             redirect_to solicitudes_path, notice: "Se ha aceptado la solicitud"
         else
-            redirect_to solicitudes_path, notice: "No se puede aceptar la solicitud. No hay más libros disponibles hast que se devuelvan"
+            redirect_to solicitudes_path, notice: "No se puede aceptar la solicitud. No hay más libros disponibles hasta que se devuelvan"
         end
     end
     
     def show
         @solicitudes = Solicituds.all.paginate(:per_page => 10, :page => params[:page])
-    end
-    
-    def devolver_libro
-        s = Solicituds.find(params[:id])
-        l = Libro.find(params[:libro_id])
-        s.destroy
-        # Suma en uno el número de libros disponibles
-        l.update_attribute(:disponibles, l.disponibles + 1)
-        redirect_to devolver_libro_path, notice: "Se ha devuelto el libro"
     end
     
     private
