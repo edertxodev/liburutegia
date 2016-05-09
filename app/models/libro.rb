@@ -1,5 +1,6 @@
 class Libro < ActiveRecord::Base
     has_many :solicituds
+    has_many :comentarios
     mount_uploader :portada, PortadaUploader
     
     # Para los idiomas

@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   end
   
   resources :users
-  resources :libros
+  resources :libros do
+    resources :comentarios
+  end
   resources :solicitudes
   resources :leidos
   
