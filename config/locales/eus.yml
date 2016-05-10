@@ -4,6 +4,7 @@ eus:
     inicio: "Hasiera"
     nuevo_libro: "Liburu berria"
     solicitudes: "Eskaerak"
+    devoluciones: "Bueltatu liburua"
     cerrar sesión: "Amaitu saioa"
     perfil: "Profila"
     administrar usuarios: "Erabiltzaileak editatu"
@@ -66,6 +67,11 @@ eus:
                             inclusion: "ezin izan da sartu"
                         idioma:
                             inclusion: "ezin da sartu"
+                user:
+                    attributes:
+                        username:
+                            taken: "Badago pertsona bat erabiltzaile izen horrekin"
+                            blank: "Erabiltzaile izena ezin da hutsa izan"
     date:
         formats:
             corta: "%Y/%m/%d"

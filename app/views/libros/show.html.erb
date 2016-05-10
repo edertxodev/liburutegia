@@ -1,5 +1,4 @@
 <div class="col-sm-12">
-  <div class="row">
     <div class="col-sm-5">
       <% if @libro.portada? %>
         <%= image_tag @libro.portada, :class => 'img-responsive portada img-thumbnail' %>
@@ -21,26 +20,26 @@
         </div>
       </div>
       <% if current_user.role == "admin" %>
-      <div class="col-sm-8 col-sm-offset-4 text-right">
-        <%= link_to t('Editar'), edit_libro_path(@libro), :class => 'btn btn-primary' %>
-        <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
-      </div>
-      <% else %>
-      <div class="col-sm-8 col-sm-offset-4 text-right">
-        <%= link_to t('Pedir libro'), new_solicitude_path(:libro_alquiler => 
-                {
-                    :libro_id => @libro.id, 
-                    :libro => @libro.titulo, 
-                    :user_id => current_user.id, 
-                    :username => current_user.username
-                  }), :class => 'btn btn-info' %>
-        <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
-      </div>
+        <div class="col-sm-8 col-sm-offset-4 text-right">
+          <%= link_to t('Editar'), edit_libro_path(@libro), :class => 'btn btn-primary' %>
+          <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
+        </div>
+        <% else %>
+        <div class="col-sm-8 col-sm-offset-4 text-right">
+          <%= link_to t('Pedir libro'), new_solicitude_path(:libro_alquiler => 
+                  {
+                      :libro_id => @libro.id, 
+                      :libro => @libro.titulo, 
+                      :user_id => current_user.id, 
+                      :username => current_user.username
+                    }), :class => 'btn btn-info' %>
+          <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
+        </div>
       <% end %>
     </div>
     <div id="comentarios" class="col-sm-7">
       <% @libro.comentarios.each do |c| %>
-        <p><%= c.username %></p>
+        <h2><%= link_to c.username, mostrar_usuario_path(c.username) %> <small><%= c.created_at.strftime('%Y/%m/%d') %></small></h2>
         <p><%= c.comentario %></p>
       <% end %>
     </div>
@@ -51,10 +50,15 @@
             <%= f.text_field :user_id, :value => current_user.id %>
             <%= f.text_field :username, :value => current_user.username %>
           </div>
-          <%= f.text_area :comentario %>
-          <%= f.submit %>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-10">
+              <%= f.text_area :comentario, :placeholder => "Escribe tu comentario" %>
+            </div>
+          </div>
+          <div class="col-sm-8 col-sm-offset-12">
+            <%= f.submit 'Enviar comentario', :class => 'btn btn-primary' %>
+          </div>
         <% end %>
       </div>
     <% end %>
-  </div>
 </div>

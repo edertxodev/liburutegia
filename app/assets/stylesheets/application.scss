@@ -73,6 +73,11 @@ a {
         .dropdown-menu a {
             color: #333 !important;
         }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-top: -5px;
+        }
     }
     
     .num-solicitudes {
@@ -150,5 +155,38 @@ a {
     position: absolute;
     p {
         margin-right: 20px;
+    }
+}
+
+/* Comentarios */
+
+#comentarios {
+    text-align: left;
+    a {
+        color: #609dd2 !important;
+        &:hover {
+            color: #337AB7 !important;
+            text-decoration: none;
+        }
+    } 
+    p {
+        color: rgba(0,0,0,0.6);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    small {
+        font-size: 12px;
+    }
+}
+
+#comentar {
+    padding: 23px;
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 110px;
+        border-radius: 3px;
     }
 }

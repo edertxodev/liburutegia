@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :solicitudes
   resources :leidos
   
+  get 'users/:username/perfil' => 'users#mostrar_usuario', as: 'mostrar_usuario'
   get 'users/:id/libros-leidos' => 'leidos#libros_leidos_usuario', as: 'user_libros_leidos'
   get 'solicitudes/:id/confirmar' => 'solicitudes#aceptar_solicitud'
   get 'solicitudes/:id/devolver' => 'leidos#devolver_libro'

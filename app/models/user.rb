@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :solicituds
+  has_many :comentarios
   mount_uploader :avatar, AvatarUploader
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -28,4 +29,14 @@ class User < ActiveRecord::Base
       self.all
     end
   end
+  
+  # Validamos los datos antes de crear o modificar un libro
+    
+      # Username es obligatorio
+      validates :username, :uniqueness => true, presence: true
+      # Role es obligatorio
+      validates :role, presence: { message: "es obligatorio" }
+      # Password es obligatorio
+      validates :password, presence: { message: "es obligatorio" }
+  
 end

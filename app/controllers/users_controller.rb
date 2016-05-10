@@ -45,6 +45,10 @@ class UsersController < ApplicationController
         end
     end
     
+    def mostrar_usuario
+        @user = User.find_by_username(params[:username])
+    end
+    
     private
         
         def user_params

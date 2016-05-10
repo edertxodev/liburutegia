@@ -1,16 +1,19 @@
 <h2 class="page-header">Crear nuevo usuario</h2>
 <%= form_for(@user) do |f| %>
 	<% if @user.errors.any? %>
-	    <div id="error_explanation">
-	      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-	      <ul>
-	      <% @user.errors.full_messages.each do |message| %>
-	        <li><%= message %></li>
-	      <% end %>
-	      </ul>
-	    </div>
-    <% end %>
+	  <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h4><%= pluralize(@user.errors.count, "error") %> <%= t("impidió crear el usuario:") %></h4>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
 
 <div class="col-sm-12">
     <div class="row">

@@ -9,19 +9,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to "San Luis - Liburutegia", root_path, :class => "navbar-brand" %>
+        <%= link_to image_tag('izarra.png'), root_path, :class => "navbar-brand", :title => "La Salle San Luis - Liburutegia" %>
+        <%= link_to "La Salle San Luis - Liburutegia", root_path, :class => "navbar-brand" %>
         </div>
         <% if user_signed_in? %>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="li-menu"><%= link_to t('inicio'), root_path %></li>
+            <li class="li-menu"><%= link_to "", root_path, :class => 'glyphicon glyphicon-home', :title => t('inicio') %></li>
             <% if current_user.role == "admin" %>
-            <li class="li-menu"><%= link_to t('nuevo_libro'), new_libro_path %></li>
-            <li class="li-menu"><%= link_to t('solicitudes'), solicitudes_path %></li>
+            <li class="li-menu"><%= link_to "", new_libro_path, :class => 'glyphicon glyphicon-plus', :title => t('nuevo_libro') %></li>
+            <li class="li-menu"><%= link_to "", solicitudes_path, :class => 'glyphicon glyphicon-export', :title => t('solicitudes') %></li>
               <% if num_solicitudes_pendientes > 0 %>
                 <li class="li-menu"><span class="num-solicitudes"><%= num_solicitudes_pendientes %></span></li>
               <% end %>
-              <li><%= link_to t('devoluciones'), devolver_libro_path %></li>
+              <li class="li-menu"><%= link_to "", devolver_libro_path, :class => 'glyphicon glyphicon-import', :title => t('devoluciones') %></li>
               <% if num_solicitudes_aceptadas > 0 %>
                 <li class="li-menu"><span class="num-solicitudes"><%= num_solicitudes_aceptadas %></span></li>
               <% end %>
