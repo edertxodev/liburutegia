@@ -36,29 +36,29 @@
           <%= link_to t('Atrás'), libros_path, :class => 'btn btn-default' %>
         </div>
       <% end %>
-    </div>
-    <div id="comentarios" class="col-sm-7">
-      <% @libro.comentarios.each do |c| %>
-        <h2><%= link_to c.username, mostrar_usuario_path(c.username) %> <small><%= c.created_at.strftime('%Y/%m/%d') %></small></h2>
-        <p><%= c.comentario %></p>
-      <% end %>
-    </div>
-    <% if libro_leido %>
-      <div id="comentar" class="col-sm-7">
-        <%= form_for([@libro, @libro.comentarios.build]) do |f| %>
-          <div class="sr-only">
-            <%= f.text_field :user_id, :value => current_user.id %>
-            <%= f.text_field :username, :value => current_user.username %>
-          </div>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-10">
-              <%= f.text_area :comentario, :placeholder => "Escribe tu comentario" %>
-            </div>
-          </div>
-          <div class="col-sm-8 col-sm-offset-12">
-            <%= f.submit 'Enviar comentario', :class => 'btn btn-primary' %>
-          </div>
+      <div id="comentarios" class="col-sm-7">
+        <% @libro.comentarios.each do |c| %>
+          <h2><%= link_to c.username, mostrar_usuario_path(c.username) %> <small><%= c.created_at.strftime('%Y/%m/%d') %></small></h2>
+          <p><%= c.comentario %></p>
         <% end %>
       </div>
-    <% end %>
+      <% if libro_leido %>
+        <div id="comentar" class="col-sm-12">
+          <%= form_for([@libro, @libro.comentarios.build]) do |f| %>
+            <div class="sr-only">
+              <%= f.text_field :user_id, :value => current_user.id %>
+              <%= f.text_field :username, :value => current_user.username %>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <%= f.text_area :comentario, :placeholder => "Escribe tu comentario" %>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <%= f.submit 'Enviar comentario', :class => 'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
 </div>
