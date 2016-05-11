@@ -38,7 +38,15 @@
       <% end %>
       <div id="comentarios" class="col-sm-7">
         <% @libro.comentarios.each do |c| %>
-          <h2><%= link_to c.username, mostrar_usuario_path(c.username) %> <small><%= c.created_at.strftime('%Y/%m/%d') %></small></h2>
+          <h2>
+            <%= link_to c.username, mostrar_usuario_path(c.username) %> 
+            <small><%= c.created_at.strftime('%Y/%m/%d') %></small>
+            <span class="text-right">
+              <%= link_to [@libro, c], method: :delete, title: t('eliminar comentario'), data: { confirm: t('De veras quieres eliminar este comentario?') } do %>
+                <span class="glyphicon glyphicon-remove"></span>
+              <% end %>
+            </span>
+          </h2>
           <p><%= c.comentario %></p>
         <% end %>
       </div>
