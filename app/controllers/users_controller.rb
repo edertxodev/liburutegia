@@ -49,6 +49,15 @@ class UsersController < ApplicationController
         @user = User.find_by_username(params[:username])
     end
     
+    def destroy
+        @user = User.find(params[:id])
+        @user.destroy
+        respond_to do |format|
+          format.html { redirect_to users_url, notice: 'El usuario se ha eliminado correctamente.' }
+          format.json { head :no_content }
+        end
+    end
+    
     private
         
         def user_params

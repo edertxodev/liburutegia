@@ -30,13 +30,13 @@ class User < ActiveRecord::Base
     end
   end
   
-  # Validamos los datos antes de crear o modificar un libro
+  # Validamos los datos antes de crear un usuario
     
       # Username es obligatorio
-      validates :username, :uniqueness => true, presence: true
+      validates :username, :uniqueness => true, presence: true, :on => :create
       # Role es obligatorio
-      validates :role, presence: { message: "es obligatorio" }
+      validates :role, presence: { message: "es obligatorio" }, :on => :create
       # Password es obligatorio
-      validates :password, presence: { message: "es obligatorio" }
+      validates :password, presence: { message: "es obligatorio" }, :on => :create
   
 end

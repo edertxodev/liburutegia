@@ -23,7 +23,9 @@ eus:
     isbn: "ISBN"
     Saber más: "Idazleari buruz"
     De veras quieres eliminar este libro?: "Zihur zaude liburu hau ezabatu nahi duzula?"
+    De veras quieres eliminar este usuario?: "Zihur zaude erabiltzaile hau ezabatu nahi duzula?"
     eliminar libro: "Liburua ezabatu"
+    eliminar usuario: "Erabiltzailea ezabatu"
     Editar libro: "Liburua editatu"
     buscar libro: "Tituluaz edo Idazleaz bilaketa egin"
     

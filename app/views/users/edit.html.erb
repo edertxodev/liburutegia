@@ -1,7 +1,14 @@
+<h2 class="page-header">Editar avatar</h2>
+<% if current_user.role == "admin" %>
+<div class="col-sm-12 text-right">
+    <%= link_to @user, method: :delete, title: t('eliminar usuario'), data: { confirm: t('De veras quieres eliminar este usuario?') } do %>
+        <span class="glyphicon glyphicon-remove"></span>
+    <% end %>
+</div>
+<% end %>
+
 <%= form_for @user, :action => 'update' do |f| %>
   <%= devise_error_messages! %>
-  
-    <h2 class="page-header">Editar avatar</h2>
   
     <div class="col-sm-3 col-sm-offset-4">
         <div class="row text-center">
