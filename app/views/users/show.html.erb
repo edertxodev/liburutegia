@@ -8,9 +8,7 @@
     <h4 class="text-muted"><%= @user.nombre %> <%= @user.apellidos %></h4>
     <div class="row">
         <div id="info">
-            <h5>Libros leídos</h5>
-            <%= link_to num_libros_leidos_usuario, libros_leidos_mostrar_path, :class => 'btn btn-default', :title => 'Libros que ha leído' %>
-            <h5>Libros comentados</h5>
+            <h5><%= t('Libros comentados') %></h5>
             <%= link_to '2 Comentados', '#', :class => 'btn btn-default', :title => 'Libros que ha comentado' %>
         </div>
     </div>

@@ -30,6 +30,8 @@ eus:
     eliminar comentario: "Komentarioa ezabatu"
     Editar libro: "Liburua editatu"
     buscar libro: "Tituluaz edo Idazleaz bilaketa egin"
+    Libros leidos: "Irakurritako liburuak"
+    Libros comentados: "Komentatutako liburuak"
     
     
     # -- Generos
