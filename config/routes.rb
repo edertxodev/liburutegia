@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   
   get 'users/:username/perfil' => 'users#mostrar_usuario', as: 'mostrar_usuario'
   get 'users/:id/libros-leidos' => 'leidos#libros_leidos_usuario', as: 'user_libros_leidos'
+  get 'users/:id/libros-leidos-usuario' => 'leidos#libros_leidos_mostrar', as: 'libros_leidos_mostrar'
   get 'solicitudes/:id/confirmar' => 'solicitudes#aceptar_solicitud'
   get 'solicitudes/:id/devolver' => 'leidos#devolver_libro'
   get 'solicitudes/devolver' => 'solicitudes#devolver_libro', as: 'devolver_libro'

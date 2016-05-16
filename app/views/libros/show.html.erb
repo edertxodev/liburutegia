@@ -42,8 +42,10 @@
             <%= link_to c.username, mostrar_usuario_path(c.username) %> 
             <small><%= c.created_at.strftime('%Y/%m/%d') %></small>
             <span class="text-right">
-              <%= link_to [@libro, c], method: :delete, title: t('eliminar comentario'), data: { confirm: t('De veras quieres eliminar este comentario?') } do %>
-                <span class="glyphicon glyphicon-remove"></span>
+              <% if current_user.role == "admin" %>
+                <%= link_to [@libro, c], method: :delete, title: t('eliminar comentario'), data: { confirm: t('De veras quieres eliminar este comentario?') } do %>
+                  <span class="glyphicon glyphicon-remove"></span>
+                <% end %>
               <% end %>
             </span>
           </h2>

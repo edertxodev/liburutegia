@@ -144,6 +144,16 @@ a {
 
 #info {
     margin-bottom: 20px;
+    h5 {
+        font-weight: bold;
+        color: #609dd2;
+    }
+    .btn-default {
+        &:hover {
+            color: #337AB7 !important;
+            font-weight: bold;
+        }
+    }
 }
 
 .thumb {
