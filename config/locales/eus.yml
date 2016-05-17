@@ -27,6 +27,10 @@ eus:
     crear usuario: "Erabiltzaile berria sortu"
     contraseña aleatoria: "Ausazko pasahitza"
     cambiar contraseña: "Pasahitza aldatu"
+    nueva contraseña: "Pasahitz berria"
+    confirmar nueva contraseña: "Pasahitz berria baieztatu"
+    contraseña actual: "Oraingo pasahitza"
+    usuario_actualizado: "Erabiltzailea ongi eguneratu da"
     
     # Página editar usuario
     Editar avatar: "Profileko irudia"
@@ -100,6 +104,7 @@ eus:
             user:
                 username: "Erabiltzaile izena"
                 password: "Pasahitza"
+                current_password: "Oraingo pasahitza"
         errors:
             models:
                 libro:
@@ -123,6 +128,9 @@ eus:
                             blank: "ezin da hutsa izan"
                         password:
                             blank: "ezin da hutsa izan"
+                        current_password:
+                            blank: "sartu behar duzu"
+                            invalid: "ez da zuzena"
     date:
         formats:
             corta: "%Y/%m/%d"
@@ -140,6 +148,9 @@ eus:
         sessions:
             user:
                 signed_in: "Saioa ondo hasi duzu! Ongi etorri!"
+        registrations:
+            user:
+                updated: "Erabiltzailea ongi eguneratu da"
                 
     # BOTONES
     Editar: "Editatu"

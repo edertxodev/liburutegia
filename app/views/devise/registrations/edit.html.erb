@@ -1,31 +1,31 @@
 <%= form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
   
-  <h2 class="page-header">Editar contraseña</h2>
+  <h2 class="page-header"><%= t('cambiar contraseña') %></h2>
 
   <div class="col-sm-3 col-sm-offset-4">
     <div class="row text-left">
       <!-- grupo -->
       <div class="form-group">
-        <h4>Nueva contraseña</h4>
+        <h4><%= t('nueva contraseña') %></h4>
         <%= f.password_field :password, autocomplete: "off", :class => 'form-control' %>
       </div>
 
       <!-- grupo -->
       <div class="form-group">
-        <h4>Confirmar nueva contraseña</h4>
+        <h4><%= t('confirmar nueva contraseña') %></h4>
         <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'form-control' %>
       </div>
 
       <!-- grupo -->
       <div class="form-group">
-        <h4>Contraseña actual</h4>
+        <h4><%= t('contraseña actual') %></h4>
         <%= f.password_field :current_password, autocomplete: "off", :class => 'form-control' %>
       </div>
       
       <div class="text-center">
-        <%= f.submit 'Modificar contraseña', :class => 'btn btn-primary' %>
-        <%= link_to 'Cancelar', @user, :class => 'btn btn-default' %>
+        <%= f.submit t('Cambiar contraseña'), :class => 'btn btn-primary' %>
+        <%= link_to t('Cancelar'), @user, :class => 'btn btn-default' %>
       </div>
     </div>
   </div>

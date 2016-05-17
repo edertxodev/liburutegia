@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, #:registerable,
          #:recoverable, 
-         :rememberable, :trackable, :validatable, :authentication_keys => [:username] # Utiliza username para accederç
+         :rememberable, :trackable, :validatable, :authentication_keys => [:username] # Utiliza username para acceder
   enum roles: [:normal, :admin]
   
   def email_required?
@@ -35,8 +35,8 @@ class User < ActiveRecord::Base
       # Username es obligatorio
       validates :username, :uniqueness => true, presence: true, :on => :create
       # Role es obligatorio
-      validates :role, presence: { message: "es obligatorio" }, :on => :create
+      validates :role, presence: true, :on => :create
       # Password es obligatorio
-      validates :password, presence: { message: "es obligatorio" }, :on => :create
+      validates :password, presence: true, :on => :create
   
 end

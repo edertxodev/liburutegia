@@ -31,14 +31,17 @@ class UsersController < ApplicationController
     
     def update
         if params[:user][:password].blank?
-            params[:user].delete("password")
-            params[:user].delete("password_confirmation")
+            params[:user].delete(:password)
+            params[:user].delete(:password_confirmation)
         end
-
         @user = User.find(params[:id])
         respond_to do |format|
           if @user.update(user_params)
-            format.html { redirect_to users_path, notice: 'El usuario se ha actualizado correctamente.' }
+            if current_user.role == "admin"
+                format.html { redirect_to users_path, notice: t('usuario_actualizado') }
+            else
+                format.html { redirect_to root_path, notice: t('El usuario se ha actualizado correctamente.') }
+            end
           else
             format.html { render :edit }
           end

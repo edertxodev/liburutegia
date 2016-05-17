@@ -2,7 +2,7 @@
     <% if @user.avatar? %>
         <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
     <% else %>
-        <img src="/uploads/user/avatar/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
+        <img src="/img/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
     <% end %>
     <h1><%= @user.username %></h1>
     <h4 class="text-muted"><%= @user.nombre %> <%= @user.apellidos %></h4>

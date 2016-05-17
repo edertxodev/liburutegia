@@ -15,13 +15,13 @@
             <% if @user.avatar? %>
                 <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
             <% else %>
-                <img src="/uploads/user/avatar/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
+                <img src="/img/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
             <% end %>
         </div>
         <% if current_user.username == @user.username %>
             <div class="row">
                 <h4><%= t('cambiar imagen') %></h4>
-                <%= f.file_field :avatar %>            
+                <%= f.file_field :avatar, :id => 'subir-avatar' %>            
             </div>
             <% if current_user.role == 'admin' %>
                 <div class="row">
@@ -49,7 +49,7 @@
             </div>
         <% end %>
           <div class="text-center">
-            <%= f.submit t('Guardar'), :class => 'btn btn-primary' %>
+            <%= f.submit t('Guardar'), :class => 'btn btn-primary guardar-perfil' %>
             <%= link_to t('Cancelar'), @user, :class => 'btn btn-default' %>
           </div>
     </div>
