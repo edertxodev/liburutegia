@@ -1,4 +1,4 @@
-<h2 class="page-header">Crear nuevo usuario</h2>
+<h2 class="page-header"><%= t('crear usuario') %></h2>
 <%= form_for(@user) do |f| %>
 	<% if @user.errors.any? %>
 	  <div class="panel panel-danger">
@@ -21,17 +21,17 @@
         <form>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Nombre de usuario</h4>
+              <h4><%= t('nombre de usuario') %></h4>
               <%= f.text_field :username, :class => 'form-control' %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Rol</h4>
-              <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+              <h4><%= t('rol del usuario') %></h4>
+              <%= f.select :role, User.roles.keys.to_a.map {|c| [t("user.roles.#{c}"), c]}, {}, {:class => 'form-control'} %>
           </div>
           <!-- grupo -->
           <div class="form-group">
-              <h4>Contraseña aleatoria</h4>
+              <h4><%= t('contraseña aleatoria') %></h4>
               <div class="input-group">
               	<%= f.text_field :password, autocomplete: "off", :class => 'form-control pass-aleatoria' %>
               	<span class="input-group-btn">
@@ -39,9 +39,9 @@
               	</span>
               </div>
           </div>
-          <div class="text-right">
-            <%= f.submit 'Crear usuario', :class => 'btn btn-primary' %>
-            <%= link_to 'Cancelar', @libro, :class => 'btn btn-default' %>
+          <div class="text-left">
+            <%= f.submit t('crear usuario'), :class => 'btn btn-primary' %>
+            <%= link_to t('cancelar'), @libro, :class => 'btn btn-default' %>
           </div>
         </form>
       </div>

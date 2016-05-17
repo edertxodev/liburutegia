@@ -1,7 +1,7 @@
 <table class="table table-bordered table-hover">
     <tr>
-      <th><%= sortable "username", "Usuario" %></th>
-      <th><%= sortable "role", "Rol del usuario" %></th>
+      <th><%= sortable "username", t('nombre de usuario') %></th>
+      <th><%= sortable "role", t('rol del usuario') %></th>
     </tr>
       <% @users.each do |u| %>
       <tr>

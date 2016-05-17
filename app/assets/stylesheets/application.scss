@@ -63,6 +63,10 @@ a {
     color:#000 !important;
 }
 
+#btn-editarperfil a {
+    margin: 10px;
+}
+
 /* Barra de navegación */
     .navbar-default {
         background-color: rgb(0,0,150);
@@ -116,6 +120,17 @@ a {
 
 .select-fecha {
     border: 1px solid rgb(204,204,204);
+}
+
+#editarperfil-page {
+    .row {
+        h4 {
+            margin-top: 10px !important;            
+        }
+    }
+    a, input[type="submit"] {
+        margin-top: 20px;
+    }
 }
 
 /* Tablas */

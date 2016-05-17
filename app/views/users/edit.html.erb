@@ -1,4 +1,4 @@
-<h2 class="page-header">Editar avatar</h2>
+<h2 class="page-header"><%= t('Editar avatar') %></h2>
 <% if current_user.role == "admin" %>
 <div class="col-sm-12 text-right">
     <%= link_to @user, method: :delete, title: t('eliminar usuario'), data: { confirm: t('De veras quieres eliminar este usuario?') } do %>
@@ -10,7 +10,7 @@
 <%= form_for @user, :action => 'update' do |f| %>
   <%= devise_error_messages! %>
   
-    <div class="col-sm-3 col-sm-offset-4">
+    <div id="editarperfil-page" class="col-sm-4 col-sm-offset-4">
         <div class="row text-center">
             <% if @user.avatar? %>
                 <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
@@ -20,38 +20,37 @@
         </div>
         <% if current_user.username == @user.username %>
             <div class="row">
-                <h4>Cambiar imagen</h4>
+                <h4><%= t('cambiar imagen') %></h4>
                 <%= f.file_field :avatar %>            
             </div>
             <% if current_user.role == 'admin' %>
                 <div class="row">
-                    <h4>Cambiar nombre de usuario</h4>
+                    <h4><%= t('cambiar nombre de usuario') %></h4>
                     <%= f.text_field :username, :class => 'form-control' %>
                 </div>
                 <div class="row">
-                    <h4>Cambiar rol</h4>
-                    <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+                    <h4><%= t('cambiar rol') %></h4>
+                    <%= f.select :role, User.roles.keys.to_a.map {|c| [t("user.roles.#{c}"), c]}, {}, {:class => 'form-control'} %>
                 </div>
             <% end %>
         <% end %>
         <% if current_user.role == 'admin' && current_user.username != @user.username %>
             <div class="row">
-                <h4>Cambiar nombre de usuario</h4>
+                <h4><%= t('cambiar nombre de usuario') %></h4>
                 <%= f.text_field :username, :class => 'form-control' %>
             </div>
             <div class="row">
-                <h4>Cambiar rol</h4>
-                <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+                <h4><%= t('cambiar rol') %></h4>
+                <%= f.select :role, User.roles.keys.to_a.map {|c| [t("user.roles.#{c}"), c]}, {}, {:class => 'form-control'} %>
             </div>
             <div class="row">
-                <h4>Cambiar contraseña</h4>
-                <small>Introduce una nueva contraseña si lo deseas</small>
+                <h4><%= t('cambiar contraseña') %></h4>
                 <%= f.text_field :password, autocomplete: "off", :class => 'form-control' %>
             </div>
         <% end %>
           <div class="text-center">
-            <%= f.submit 'Guardar', :class => 'btn btn-primary' %>
-            <%= link_to 'Cancelar', @user, :class => 'btn btn-default' %>
+            <%= f.submit t('Guardar'), :class => 'btn btn-primary' %>
+            <%= link_to t('Cancelar'), @user, :class => 'btn btn-default' %>
           </div>
     </div>
 <% end %>

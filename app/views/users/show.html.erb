@@ -14,6 +14,8 @@
             <p class="cantidad"><%= num_comentarios_usuario(@user.id) %></p>
         </div>
     </div>
-    <%= link_to t('Cambiar avatar'), edit_user_path(current_user), :class => 'btn btn-primary' %>
-    <%= link_to t('Cambiar contraseña'), edit_user_registration_path(current_user), :class => 'btn btn-danger' %>
+    <div id="btn-editarperfil">
+        <%= link_to t('Cambiar avatar'), edit_user_path(current_user), :class => 'btn btn-primary' %>
+        <%= link_to t('Cambiar contraseña'), edit_user_registration_path(current_user), :class => 'btn btn-danger' %>
+    </div>
 </div>

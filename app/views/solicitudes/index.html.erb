@@ -18,5 +18,5 @@
   </table>
   <%= will_paginate @solicitudes, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
 <% else %>
-  <h4><%= t('no hay solicitudes pendientes') %></h4>
+  <h4><small><%= t('no hay solicitudes pendientes') %></small></h4>
 <% end %>

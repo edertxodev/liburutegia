@@ -12,6 +12,27 @@ eus:
     Registrar nuevo libro: "Liburu berri bat erregistratu"
     Cambiar portada: "Azala aldatu"
     Elegir portada: "Azala hautatu"
+    impidió guardar el libro:: "libura gordetzea galarazten dute"
+    impidió crear el usuario: "erabiltzailea sortzea galarazi du"
+    solicitudes pendientes: "Esleitu gabe dauden liburuak"
+    no hay solicitudes pendientes: "Ez dago eskaerarik momentu honetan"
+    libros para devolver: "Bueltatzeko liburuak"
+    no hay libros para devolver: "Ez dago bueltatzeko libururik momentu honetan"
+    
+    # Usuarios
+    usuarios: "Erabiltzaileak"
+    nombre de usuario: "Erabiltzaile izena"
+    rol del usuario: "Erabiltzailearen baimena"
+    buscar usuario: "Erabiltzailea bilatu"
+    crear usuario: "Erabiltzaile berria sortu"
+    contraseña aleatoria: "Ausazko pasahitza"
+    cambiar contraseña: "Pasahitza aldatu"
+    
+    # Página editar usuario
+    Editar avatar: "Profileko irudia"
+    cambiar imagen: "Profileko irudia aldatu"
+    cambiar nombre de usuario: "Erabiltzaile izena aldatu"
+    cambiar rol: "Baimenak aldatu"
     
     titulo: "Izenburua"
     autor: "Idazlea"
@@ -67,19 +88,41 @@ eus:
     
     # OTROS
     activerecord:
+        attributes:
+            libro:
+                titulo: "Izenburua"
+                autor: "Idazlea"
+                genero: "Generoa"
+                isbn: "ISBN"
+                idioma: "Hizkuntza"
+                fregistro: "Erregistro data"
+                cantidad: "Kopurua"
+            user:
+                username: "Erabiltzaile izena"
+                password: "Pasahitza"
         errors:
             models:
                 libro:
                     attributes:
+                        titulo:
+                            blank: "derrigorrezkoa da"
+                        autor:
+                            blank: "derrigorrezkoa da"
+                        isbn:
+                            blank: "derrigorrezkoa da"
                         genero:
                             inclusion: "ezin izan da sartu"
                         idioma:
                             inclusion: "ezin da sartu"
+                        cantidad:
+                            greater_than: "0 baino handiagoa izan behar du"
                 user:
                     attributes:
                         username:
-                            taken: "Badago pertsona bat erabiltzaile izen horrekin"
-                            blank: "Erabiltzaile izena ezin da hutsa izan"
+                            taken: "jada existitzen da"
+                            blank: "ezin da hutsa izan"
+                        password:
+                            blank: "ezin da hutsa izan"
     date:
         formats:
             corta: "%Y/%m/%d"

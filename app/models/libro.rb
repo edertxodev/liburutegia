@@ -35,13 +35,13 @@ class Libro < ActiveRecord::Base
     # Validamos los datos antes de crear o modificar un libro
     
       # Titulo es obligatorio
-      validates :titulo, presence: { message: "es obligatorio" }
+      validates :titulo, presence: true
       # Autor es obligatorio
-      validates :autor, presence: { message: "es obligatorio" }
+      validates :autor, presence: true
       # Género es obligatorio
-      validates :genero, presence: { message: "es obligatorio" }
+      validates :genero, presence: true
       # ISBN es obligatorio
-      validates :isbn, presence: { message: "es obligatorio" }
+      validates :isbn, presence: true
       # La cantidad solo puede ser un número entero y no puede ser menor o igual a 0
-      validates :cantidad, presence: { message: "es obligatoria" }, :numericality => { :greater_than => 0, only_integer: true, message: "debe ser mayor que 0" }
+      validates :cantidad, presence: true, :numericality => { :greater_than => 0, only_integer: true }
 end
