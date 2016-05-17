@@ -8,10 +8,12 @@
     <h4 class="text-muted"><%= @user.nombre %> <%= @user.apellidos %></h4>
     <div class="row">
         <div id="info">
+            <h5><%= t('Libros leidos') %></h5>
+            <p class="cantidad"><%= num_libros_leidos_usuario %></p>
             <h5><%= t('Libros comentados') %></h5>
-            <%= link_to '2 Comentados', '#', :class => 'btn btn-default', :title => 'Libros que ha comentado' %>
+            <p class="cantidad"><%= num_comentarios_usuario(@user.id) %></p>
         </div>
     </div>
-    <%= link_to 'Cambiar avatar', edit_user_path(current_user), :class => 'btn btn-primary' %>
-    <%= link_to 'Cambiar contraseña', edit_user_registration_path(current_user), :class => 'btn btn-danger' %>
+    <%= link_to t('Cambiar avatar'), edit_user_path(current_user), :class => 'btn btn-primary' %>
+    <%= link_to t('Cambiar contraseña'), edit_user_registration_path(current_user), :class => 'btn btn-danger' %>
 </div>

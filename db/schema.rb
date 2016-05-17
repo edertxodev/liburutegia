@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160510080600) do
+ActiveRecord::Schema.define(version: 20160516105520) do
 
   create_table "comentarios", force: :cascade do |t|
     t.integer  "user_id"

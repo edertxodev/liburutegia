@@ -32,6 +32,8 @@ eus:
     buscar libro: "Tituluaz edo Idazleaz bilaketa egin"
     Libros leidos: "Irakurritako liburuak"
     Libros comentados: "Komentatutako liburuak"
+    Cambiar avatar: "Profileko irudia aldatu"
+    Cambiar contraseña: "Pasahitza aldatu"
     
     
     # -- Generos
@@ -56,7 +58,7 @@ eus:
             INFORMATICA: "Informatika"
         idiomas:
             castellano: "Gaztelania"
-            euskera: "Esukera"
+            euskera: "Euskera"
             inglés: "Ingelesa"
             francés: "Frantsesa"
             otros: "Besteak"
@@ -91,6 +93,7 @@ eus:
           user:
             unauthenticated: "Saioa hasi behar duzu aplikazioan sartzeko."
             invalid: "Erabiltzailea edo pasahitza ez dira zuzenak."
+            not_found_in_database: "Erabiltzailea ez dago gure datu basean"
         sessions:
             user:
                 signed_in: "Saioa ondo hasi duzu! Ongi etorri!"
