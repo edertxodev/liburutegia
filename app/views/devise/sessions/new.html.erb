@@ -1,20 +1,23 @@
-<h2 class="page-header">Acceso a la aplicación</h2>
+<div class="logo col-sm-8 col-sm-offset-3">
+  <%= image_tag('logo.png') %>
+  <h2 class="text-info">Liburutegia</h2>
+</div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="col-sm-3 col-sm-offset-4">
     <div class="row text-left">
       <!-- grupo -->
       <div class="form-group">
-        <h4>Usuario</h4>
+        <h4><%= t('usuario') %></h4>
         <%= f.text_field :username, autofocus: true, :class => 'form-control' %>
       </div>
       <!-- grupo -->
       <div class="form-group">
-        <h4>Contraseña</h4>
+        <h4><%= t('contraseña') %></h4>
         <%= f.password_field :password, autocomplete: "off", :class => 'form-control' %>
       </div>
       <div class="text-center">
-        <%= f.submit 'Acceder', :class => 'btn btn-primary' %>
+        <%= f.submit t('entrar'), :class => 'btn btn-primary btn-lg btn-block' %>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 eus:
     # LIBROS
+    entrar: "Sartu"
     index_libros: "Eskolako liburuak"
     inicio: "Hasiera"
     nuevo_libro: "Liburu berria"
@@ -21,6 +22,8 @@ eus:
     
     # Usuarios
     usuarios: "Erabiltzaileak"
+    usuario: "Erabiltzailea"
+    contraseña: "Pasahitza"
     nombre de usuario: "Erabiltzaile izena"
     rol del usuario: "Erabiltzailearen baimena"
     buscar usuario: "Erabiltzailea bilatu"
