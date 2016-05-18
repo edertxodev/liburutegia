@@ -7,7 +7,7 @@ class LibrosController < ApplicationController
   # GET /libros.json
   def index
     # Muestra x libros por página, busca por un patrón y ordena los productos al clicar en la cabecera de la columna
-    @libros = Libro.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 10, :page => params[:page])
+    @libros = Libro.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 16, :page => params[:page])
   end
 
   # GET /libros/1
