@@ -13,6 +13,8 @@ gem 'will_paginate-bootstrap'
 gem 'cancancan', '~> 1.10'
 # DatePicker
 gem 'bootstrap-datepicker-rails'
+# Roo
+gem 'roo'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
