@@ -19,6 +19,8 @@ eus:
     no hay solicitudes pendientes: "Ez dago eskaerarik momentu honetan"
     libros para devolver: "Bueltatzeko liburuak"
     no hay libros para devolver: "Ez dago bueltatzeko libururik momentu honetan"
+    libros leidos: "Irakurritako liburuak"
+    Todavía no has leído ningún libro: "Oraindik ez duzu libururik irakurri"
     
     # Usuarios
     usuarios: "Erabiltzaileak"
