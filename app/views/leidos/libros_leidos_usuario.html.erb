@@ -1,0 +1,20 @@
+<h1 class="page-header"><%= t('libros leidos') %></h1>
+  <% if num_libros_leidos_usuario > 0 %>
+    <table class="table table-bordered table-hover">
+      <tr>
+          <th>Libro</th>
+          <th>Fecha de devolución</th>
+          <th>Comentar</th>
+      </tr>
+        <% @leidos.each do |s| %>
+        <tr>
+          <td><%= s.libro %></td>
+          <td><%= I18n.l s.updated_at, :format => :corta %></td>
+          <td><%= link_to '', libro_path(id: s.libro_id, anchor: "comentar"), :class => 'glyphicon glyphicon-pencil', :title => "Comentar #{ s.libro }" %></td>
+        </tr>
+        <% end %>
+    </table>
+    <%= will_paginate @leidos, renderer: BootstrapPagination::Rails, :next_label => '&raquo;', :previous_label => '&laquo;' %>
+  <% else %>
+    <h4><%= t('Todavía no has leído ningún libro') %></h4>
+  <% end %>

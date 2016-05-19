@@ -1,0 +1,17 @@
+<div class="col-sm-4 col-sm-offset-4 text-center">
+    <% if @user.avatar? %>
+        <%= image_tag @user.avatar, :class => 'img-responsive img-circle img-thumbnail avatar' %>
+    <% else %>
+        <img src="/uploads/user/avatar/sinusuario.png" class="img-responsive img-circle img-thumbnail avatar" />
+    <% end %>
+    <h1><%= @user.username %></h1>
+    <h4 class="text-muted"><%= @user.nombre %> <%= @user.apellidos %></h4>
+    <div class="row">
+        <div id="info">
+            <h5><%= t('Libros leidos') %></h5>
+            <p class="cantidad"><%= num_libros_leidos_usuario_mostrar(@user.id) %></p>
+            <h5><%= t('Libros comentados') %></h5>
+            <p class="cantidad"><%= num_comentarios_usuario(@user.id) %></p>
+        </div>
+    </div>
+</div>

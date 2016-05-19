@@ -1,0 +1,166 @@
+es:
+    # LIBROS
+    entrar: "Acceder"
+    index_libros: "Libros de la escuela"
+    inicio: "Inicio"
+    nuevo_libro: "Nuevo libro"
+    solicitudes: "Peticiones"
+    devoluciones: "Devoluciones"
+    cerrar sesión: "Cerrar sesión"
+    perfil: "Perfil"
+    administrar usuarios: "Editar usuarios"
+    Buscar: "Bilatu liburua"
+    Registrar nuevo libro: "Liburu berri bat erregistratu"
+    Cambiar portada: "Azala aldatu"
+    Elegir portada: "Azala hautatu"
+    impidió guardar el libro:: "libura gordetzea galarazten dute"
+    impidió crear el usuario: "erabiltzailea sortzea galarazi du"
+    solicitudes pendientes: "Esleitu gabe dauden liburuak"
+    no hay solicitudes pendientes: "Ez dago eskaerarik momentu honetan"
+    libros para devolver: "Bueltatzeko liburuak"
+    no hay libros para devolver: "Ez dago bueltatzeko libururik momentu honetan"
+    libros leidos: "Irakurritako liburuak"
+    Todavía no has leído ningún libro: "Oraindik ez duzu libururik irakurri"
+    
+    # Usuarios
+    usuarios: "Erabiltzaileak"
+    usuario: "Erabiltzailea"
+    contraseña: "Pasahitza"
+    nombre de usuario: "Erabiltzaile izena"
+    rol del usuario: "Erabiltzailearen baimena"
+    buscar usuario: "Erabiltzailea bilatu"
+    crear usuario: "Erabiltzaile berria sortu"
+    contraseña aleatoria: "Ausazko pasahitza"
+    cambiar contraseña: "Pasahitza aldatu"
+    nueva contraseña: "Pasahitz berria"
+    confirmar nueva contraseña: "Pasahitz berria baieztatu"
+    contraseña actual: "Oraingo pasahitza"
+    usuario_actualizado: "Erabiltzailea ongi eguneratu da"
+    
+    # Página editar usuario
+    Editar avatar: "Profileko irudia"
+    cambiar imagen: "Profileko irudia aldatu"
+    cambiar nombre de usuario: "Erabiltzaile izena aldatu"
+    cambiar rol: "Baimenak aldatu"
+    
+    titulo: "Izenburua"
+    autor: "Idazlea"
+    genero: "Generoa"
+    idioma: "Hizkuntza"
+    fecha_reg: "Erregistro data"
+    cantidad: "Kopurua"
+    disponibles: "Eskuragarri"
+    isbn: "ISBN"
+    Saber más: "Idazleari buruz"
+    De veras quieres eliminar este libro?: "Zihur zaude liburu hau ezabatu nahi duzula?"
+    De veras quieres eliminar este usuario?: "Zihur zaude erabiltzaile hau ezabatu nahi duzula?"
+    De veras quieres eliminar este comentario?: "Zihur zaude komentario hau ezabatu nahi duzula?"
+    eliminar libro: "Liburua ezabatu"
+    eliminar usuario: "Erabiltzailea ezabatu"
+    eliminar comentario: "Komentarioa ezabatu"
+    Editar libro: "Liburua editatu"
+    buscar libro: "Tituluaz edo Idazleaz bilaketa egin"
+    Libros leidos: "Irakurritako liburuak"
+    Libros comentados: "Komentatutako liburuak"
+    Cambiar avatar: "Profileko irudia aldatu"
+    Cambiar contraseña: "Pasahitza aldatu"
+    
+    
+    # -- Generos
+    libro:
+        generos:
+            AUTOBIOGRAFIA: "Autobiografia"
+            AVENTURAS: "Abenturak"
+            Aventuras: "Abenturak"
+            BELICO: "Belikoa"
+            FICCION: "Fikzioa"
+            DETECTIVES: "Detektibeak"
+            FANTASIA: "Fantasia"
+            HUMOR: "Komeria"
+            HISTORIA: "Historia"
+            JUVENIL: "Gazteentzako"
+            NARRATIVA: "Narratiba"
+            POLICIACO: "Poliziak"
+            VIAJES: "Bidaiak"
+            THRILLER: "Thrillerra"
+            TERROR: "Ikara"
+            COMIC: "Komikia"
+            INFORMATICA: "Informatika"
+        idiomas:
+            castellano: "Gaztelania"
+            euskera: "Euskera"
+            inglés: "Ingelesa"
+            francés: "Frantsesa"
+            otros: "Besteak"
+    
+    # USUARIOS
+    
+    # OTROS
+    activerecord:
+        attributes:
+            libro:
+                titulo: "Izenburua"
+                autor: "Idazlea"
+                genero: "Generoa"
+                isbn: "ISBN"
+                idioma: "Hizkuntza"
+                fregistro: "Erregistro data"
+                cantidad: "Kopurua"
+            user:
+                username: "Erabiltzaile izena"
+                password: "Pasahitza"
+                current_password: "Oraingo pasahitza"
+        errors:
+            models:
+                libro:
+                    attributes:
+                        titulo:
+                            blank: "derrigorrezkoa da"
+                        autor:
+                            blank: "derrigorrezkoa da"
+                        isbn:
+                            blank: "derrigorrezkoa da"
+                        genero:
+                            inclusion: "ezin izan da sartu"
+                        idioma:
+                            inclusion: "ezin da sartu"
+                        cantidad:
+                            greater_than: "0 baino handiagoa izan behar du"
+                user:
+                    attributes:
+                        username:
+                            taken: "jada existitzen da"
+                            blank: "ezin da hutsa izan"
+                        password:
+                            blank: "ezin da hutsa izan"
+                        current_password:
+                            blank: "sartu behar duzu"
+                            invalid: "ez da zuzena"
+    date:
+        formats:
+            corta: "%Y/%m/%d"
+            
+    time:
+        formats:
+            corta: "%Y/%m/%d"
+    # DEVISE
+    devise:
+        failure:
+          user:
+            unauthenticated: "Saioa hasi behar duzu aplikazioan sartzeko."
+            invalid: "Erabiltzailea edo pasahitza ez dira zuzenak."
+            not_found_in_database: "Erabiltzailea ez dago gure datu basean"
+        sessions:
+            user:
+                signed_in: "Saioa ondo hasi duzu! Ongi etorri!"
+        registrations:
+            user:
+                updated: "Erabiltzailea ongi eguneratu da"
+                
+    # BOTONES
+    Editar: "Editatu"
+    Pedir libro: "Liburua eskatu"
+    Atrás: "Atzera"
+    Prestar libro: "Mailegatu"
+    Guardar: "Gorde"
+    Cancelar: "Ezeztatu"
