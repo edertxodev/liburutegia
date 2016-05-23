@@ -1,4 +1,5 @@
 es:
+    titulo_app: "BookFPM - Biblioteca Online"
     # LIBROS
     entrar: "Acceder"
     index_libros: "Libros de la escuela"

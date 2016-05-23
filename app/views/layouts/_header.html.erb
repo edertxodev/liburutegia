@@ -9,8 +9,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <%= link_to image_tag('izarra.png'), root_path, :class => "navbar-brand", :title => "La Salle San Luis - Liburutegia" %>
-        <%= link_to "La Salle San Luis - Liburutegia", root_path, :class => "navbar-brand" %>
+        <%= link_to image_tag('izarra.png'), root_path, :class => "navbar-brand", :title => t("titulo_app") %>
+        <%= link_to t("titulo_app"), root_path, :class => "navbar-brand" %>
         </div>
         <% if user_signed_in? %>
         <div class="collapse navbar-collapse">
